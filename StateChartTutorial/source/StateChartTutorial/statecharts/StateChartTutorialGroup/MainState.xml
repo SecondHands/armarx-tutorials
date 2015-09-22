@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <State version="1.2" name="MainState" uuid="594ED3D6-9DE8-4BB3-89CB-98DB43DF5655" width="800" height="600" type="Normal State">
 	<InputParameters>
+		<Parameter name="JointValueMapInitPose" type="::armarx::StringValueMapBase(::armarx::FloatVariantData)" docType="Map(float)" optional="no">
+			<DefaultValue value='{"map":{"Elbow L":{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":-1.379999995231628}},"Shoulder 1 L":{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":-1.250}},"Shoulder 2 L":{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":1.50}},"Underarm L":{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":-1.379999995231628}}},"type":"::armarx::StringValueMapBase"}' docValue="Elbow L: -1.37999999523163\nShoulder 1 L: -1.25\nShoulder 2 L: 1.5\nUnderarm L: -1.37999999523163\n"/>
+		</Parameter>
+		<Parameter name="JointValueMapWaveBackward" type="::armarx::StringValueMapBase(::armarx::FloatVariantData)" docType="Map(float)" optional="no">
+			<DefaultValue value='{"map":{"Elbow L":{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":-0.8000000119209290}}},"type":"::armarx::StringValueMapBase"}' docValue="Elbow L: -0.800000011920929\n"/>
+		</Parameter>
+		<Parameter name="JointValueMapWaveForward" type="::armarx::StringValueMapBase(::armarx::FloatVariantData)" docType="Map(float)" optional="no">
+			<DefaultValue value='{"map":{"Elbow L":{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":0.50}}},"type":"::armarx::StringValueMapBase"}' docValue="Elbow L: 0.5\n"/>
+		</Parameter>
+		<Parameter name="JointVelocityMapWaveBackward" type="::armarx::StringValueMapBase(::armarx::FloatVariantData)" docType="Map(float)" optional="no">
+			<DefaultValue value='{"map":{"Elbow L":{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":-1.0}}},"type":"::armarx::StringValueMapBase"}' docValue="Elbow L: -1\n"/>
+		</Parameter>
+		<Parameter name="JointVelocityMapWaveForward" type="::armarx::StringValueMapBase(::armarx::FloatVariantData)" docType="Map(float)" optional="no">
+			<DefaultValue value='{"map":{"Elbow L":{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":1.0}}},"type":"::armarx::StringValueMapBase"}' docValue="Elbow L: 1\n"/>
+		</Parameter>
 		<Parameter name="counterMaxValueMain" type="::armarx::IntVariantData" docType="int" optional="no">
 			<DefaultValue value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::IntVariantData","value":5}}' docValue="5"/>
 		</Parameter>
@@ -11,7 +26,7 @@
 	</LocalParameters>
 	<Substates>
 		<LocalState name="CounterState" refuuid="B1CCA92B-FC89-467B-96B7-3378EFD35655" left="282.487" top="153.452" boundingSquareSize="200"/>
-		<LocalState name="InitRobotPose" refuuid="5A0B721F-5E97-4424-9FE7-F7017408AE2E" left="54.6627" top="144.192" boundingSquareSize="200"/>
+		<LocalState name="InitRobotPose" refuuid="5A0B721F-5E97-4424-9FE7-F7017408AE2E" left="34.6462" top="124.176" boundingSquareSize="200"/>
 		<EndState name="Success" event="Success" left="577.44" top="234.78" boundingSquareSize="200"/>
 		<LocalState name="WaveBackward" refuuid="C77897AA-DBD7-419E-8719-E4BFCA7A2E2E" left="403.419" top="432.722" boundingSquareSize="200"/>
 		<LocalState name="WaveForward" refuuid="C77897AA-DBD7-419E-8719-E4BFCA7A2E2E" left="64.093" top="433.44" boundingSquareSize="200"/>
@@ -19,14 +34,15 @@
 	<Events/>
 	<StartState substateName="InitRobotPose">
 		<ParameterMappings>
-			<ParameterMapping sourceType="Parent" from="counterIdMain" to="counterId"/>
-			<ParameterMapping sourceType="Parent" from="counterMaxValueMain" to="counterMaxValue"/>
+			<ParameterMapping sourceType="Parent" from="JointValueMapInitPose" to="JointTargetPose"/>
 		</ParameterMappings>
 	</StartState>
 	<Transitions>
 		<Transition from="CounterState" to="Success" eventName="MaxCountReached">
 			<ParameterMappings/>
-			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsLocal>
+				<ParameterMapping sourceType="Parent" from="counterIdMain" to="counterIdMain"/>
+			</ParameterMappingsToParentsLocal>
 			<ParameterMappingsToParentsOutput/>
 			<SupportPoints>
 				<SupportPoint posX="529.963" posY="269.116"/>
@@ -34,8 +50,8 @@
 		</Transition>
 		<Transition from="CounterState" to="WaveBackward" eventName="MaxCountNotReached">
 			<ParameterMappings>
-				<ParameterMapping sourceType="Parent" from="counterIdMain" to="counterId"/>
-				<ParameterMapping sourceType="Parent" from="counterMaxValueMain" to="counterMaxValue"/>
+				<ParameterMapping sourceType="Parent" from="JointValueMapWaveBackward" to="WavingTargetPose"/>
+				<ParameterMapping sourceType="Parent" from="JointVelocityMapWaveBackward" to="WavingVelocity"/>
 			</ParameterMappings>
 			<ParameterMappingsToParentsLocal/>
 			<ParameterMappingsToParentsOutput/>
@@ -44,7 +60,10 @@
 			</SupportPoints>
 		</Transition>
 		<Transition from="InitRobotPose" to="WaveForward" eventName="OnPoseReached">
-			<ParameterMappings/>
+			<ParameterMappings>
+				<ParameterMapping sourceType="Parent" from="JointValueMapWaveForward" to="WavingTargetPose"/>
+				<ParameterMapping sourceType="Parent" from="JointVelocityMapWaveForward" to="WavingVelocity"/>
+			</ParameterMappings>
 			<ParameterMappingsToParentsLocal/>
 			<ParameterMappingsToParentsOutput/>
 			<SupportPoints>
@@ -52,7 +71,10 @@
 			</SupportPoints>
 		</Transition>
 		<Transition from="WaveBackward" to="WaveForward" eventName="OnPoseReachedWave">
-			<ParameterMappings/>
+			<ParameterMappings>
+				<ParameterMapping sourceType="Parent" from="JointValueMapWaveForward" to="WavingTargetPose"/>
+				<ParameterMapping sourceType="Parent" from="JointVelocityMapWaveForward" to="WavingVelocity"/>
+			</ParameterMappings>
 			<ParameterMappingsToParentsLocal/>
 			<ParameterMappingsToParentsOutput/>
 			<SupportPoints>
@@ -60,7 +82,10 @@
 			</SupportPoints>
 		</Transition>
 		<Transition from="WaveForward" to="CounterState" eventName="OnPoseReachedWave">
-			<ParameterMappings/>
+			<ParameterMappings>
+				<ParameterMapping sourceType="Parent" from="counterIdMain" to="counterId"/>
+				<ParameterMapping sourceType="Parent" from="counterMaxValueMain" to="counterMaxValue"/>
+			</ParameterMappings>
 			<ParameterMappingsToParentsLocal/>
 			<ParameterMappingsToParentsOutput/>
 			<SupportPoints>

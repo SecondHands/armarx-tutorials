@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<State version="1.2" name="CounterState" uuid="B1CCA92B-FC89-467B-96B7-3378EFD35655" width="800" height="600" type="Normal State">
+	<InputParameters/>
+	<OutputParameters/>
+	<LocalParameters/>
+	<Substates>
+		<EndState name="Failure" event="Failure" left="301.98" top="128.8" boundingSquareSize="200"/>
+		<EndState name="Success" event="Success" left="150.08" top="361.2" boundingSquareSize="200"/>
+	</Substates>
+	<Events/>
+	<StartState substateName="Success">
+		<ParameterMappings/>
+	</StartState>
+	<Transitions/>
+</State>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<State version="1.2" name="MainState" uuid="594ED3D6-9DE8-4BB3-89CB-98DB43DF5655" width="800" height="600" type="Normal State">
+	<InputParameters>
+		<Parameter name="couterMaxValue" type="::armarx::IntVariantData" docType="int" optional="no">
+			<DefaultValue value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::IntVariantData","value":5}}' docValue="5"/>
+		</Parameter>
+	</InputParameters>
+	<OutputParameters/>
+	<LocalParameters>
+		<Parameter name="couterId" type="::armarx::ChannelRefBase" docType="ChannelRef" optional="no"/>
+	</LocalParameters>
+	<Substates>
+		<EndState name="Failure" event="Failure" left="105.49" top="433.44" boundingSquareSize="200"/>
+		<EndState name="Success" event="Success" left="160.37" top="140.7" boundingSquareSize="200"/>
+	</Substates>
+	<Events/>
+	<StartState substateName="Success">
+		<ParameterMappings/>
+	</StartState>
+	<Transitions/>
+</State>
+

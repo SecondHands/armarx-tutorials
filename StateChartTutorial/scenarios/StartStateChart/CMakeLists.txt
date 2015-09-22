@@ -9,6 +9,8 @@ set(SCENARIO_COMPONENTS
         ConditionHandler
         SystemObserver
         RobotControl
+        KinematicUnitSimulation
+        KinematicUnitObserver
         XMLRemoteStateOfferer
 )
 

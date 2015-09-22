@@ -5,6 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/etc/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/etc/cmake/ArmarXPackageVersion.cmake" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scenarios/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scenarios/StartStateChart/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/source/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/interface/CMakeLists.txt" isTestSource="false" />
@@ -34,6 +36,9 @@
     </content>
     <content url="file:///usr/share/ArmarXCore/templates/cmake/PropertiesDocumentation.cmake.in">
       <sourceFolder url="file:///usr/share/ArmarXCore/templates/cmake/PropertiesDocumentation.cmake.in" isTestSource="false" />
+    </content>
+    <content url="file:///usr/share/ArmarXCore/templates/config/dependencies.cfg.in">
+      <sourceFolder url="file:///usr/share/ArmarXCore/templates/config/dependencies.cfg.in" isTestSource="false" />
     </content>
     <content url="file:///usr/share/ArmarXCore/templates/doxygen/Project.Doxyfile.in">
       <sourceFolder url="file:///usr/share/ArmarXCore/templates/doxygen/Project.Doxyfile.in" isTestSource="false" />

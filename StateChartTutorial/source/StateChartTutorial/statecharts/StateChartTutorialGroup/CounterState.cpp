@@ -47,14 +47,13 @@ void CounterState::run()
     // runs in seperate thread, thus can do complex operations
     // should check constantly whether isRunningTaskStopped() returns true
 
-    ARMARX_LOG << "CounterState::run()";
-
     ChannelRefPtr counterId = in.getcounterId();
     const int maxValue = in.getcounterMaxValue();
 
     getContext()->systemObserverPrx->incrementCounter(counterId);
 
     const int counterValue = counterId->getDataField("value")->getInt();
+    ARMARX_LOG << "CounterState::run() with value " << counterValue;
     if(counterValue >= maxValue) {
         emitMaxCountReached();
     } else {

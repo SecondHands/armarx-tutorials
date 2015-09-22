@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<State version="1.2" name="MoveRobotJoints" uuid="C77897AA-DBD7-419E-8719-E4BFCA7A2E2E" width="800" height="600" type="Normal State">
+	<InputParameters>
+		<Parameter name="WavingTargetPose" type="::armarx::StringValueMapBase(::armarx::FloatVariantData)" docType="Map(float)" optional="no"/>
+		<Parameter name="WavingVelocity" type="::armarx::StringValueMapBase(::armarx::FloatVariantData)" docType="Map(float)" optional="no"/>
+	</InputParameters>
+	<OutputParameters/>
+	<LocalParameters/>
+	<Substates/>
+	<Events>
+		<Event name="OnPoseReachedWave"/>
+	</Events>
+	<Transitions/>
+</State>
+

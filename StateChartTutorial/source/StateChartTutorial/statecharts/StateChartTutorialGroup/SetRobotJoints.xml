@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<State version="1.2" name="SetRobotJoints" uuid="5A0B721F-5E97-4424-9FE7-F7017408AE2E" width="800" height="600" type="Normal State">
+	<InputParameters>
+		<Parameter name="JointTargetPose" type="::armarx::StringValueMapBase(::armarx::FloatVariantData)" docType="Map(float)" optional="no"/>
+	</InputParameters>
+	<OutputParameters/>
+	<LocalParameters/>
+	<Substates/>
+	<Events>
+		<Event name="OnPoseReached"/>
+	</Events>
+	<Transitions/>
+</State>
+

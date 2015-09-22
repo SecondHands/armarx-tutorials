@@ -34,6 +34,8 @@ set(SOURCES
 StateChartTutorialGroupRemoteStateOfferer.cpp
 ./MainState.cpp
 ./CounterState.cpp
+./MoveRobotJoints.cpp
+./SetRobotJoints.cpp
 #@TEMPLATE_LINE@@COMPONENT_PATH@/@COMPONENT_NAME@.cpp
 )
 
@@ -42,9 +44,13 @@ StateChartTutorialGroupRemoteStateOfferer.h
 StateChartTutorialGroup.scgxml
 ./MainState.h
 ./CounterState.h
+./MoveRobotJoints.h
+./SetRobotJoints.h
 #@TEMPLATE_LINE@@COMPONENT_PATH@/@COMPONENT_NAME@.h
 ./MainState.xml
 ./CounterState.xml
+./MoveRobotJoints.xml
+./SetRobotJoints.xml
 #@TEMPLATE_LINE@@COMPONENT_PATH@/@COMPONENT_NAME@.xml
 )
 

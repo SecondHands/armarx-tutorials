@@ -10,11 +10,14 @@
 		<Parameter name="counterIdMain" type="::armarx::ChannelRefBase" docType="ChannelRef" optional="no"/>
 	</LocalParameters>
 	<Substates>
-		<LocalState name="CounterState" refuuid="B1CCA92B-FC89-467B-96B7-3378EFD35655" left="98.5255" top="192.532" boundingSquareSize="200"/>
-		<EndState name="Success" event="Success" left="577.44" top="229.283" boundingSquareSize="200"/>
+		<LocalState name="CounterState" refuuid="B1CCA92B-FC89-467B-96B7-3378EFD35655" left="282.487" top="153.452" boundingSquareSize="200"/>
+		<LocalState name="InitRobotPose" refuuid="5A0B721F-5E97-4424-9FE7-F7017408AE2E" left="54.6627" top="144.192" boundingSquareSize="200"/>
+		<EndState name="Success" event="Success" left="577.44" top="234.78" boundingSquareSize="200"/>
+		<LocalState name="WaveBackward" refuuid="C77897AA-DBD7-419E-8719-E4BFCA7A2E2E" left="403.419" top="432.722" boundingSquareSize="200"/>
+		<LocalState name="WaveForward" refuuid="C77897AA-DBD7-419E-8719-E4BFCA7A2E2E" left="64.093" top="433.44" boundingSquareSize="200"/>
 	</Substates>
 	<Events/>
-	<StartState substateName="CounterState">
+	<StartState substateName="InitRobotPose">
 		<ParameterMappings>
 			<ParameterMapping sourceType="Parent" from="counterIdMain" to="counterId"/>
 			<ParameterMapping sourceType="Parent" from="counterMaxValueMain" to="counterMaxValue"/>
@@ -26,10 +29,10 @@
 			<ParameterMappingsToParentsLocal/>
 			<ParameterMappingsToParentsOutput/>
 			<SupportPoints>
-				<SupportPoint posX="334.444" posY="272.075"/>
+				<SupportPoint posX="529.963" posY="269.116"/>
 			</SupportPoints>
 		</Transition>
-		<Transition from="CounterState" to="CounterState" eventName="MaxCountNotReached">
+		<Transition from="CounterState" to="WaveBackward" eventName="MaxCountNotReached">
 			<ParameterMappings>
 				<ParameterMapping sourceType="Parent" from="counterIdMain" to="counterId"/>
 				<ParameterMapping sourceType="Parent" from="counterMaxValueMain" to="counterMaxValue"/>
@@ -37,10 +40,31 @@
 			<ParameterMappingsToParentsLocal/>
 			<ParameterMappingsToParentsOutput/>
 			<SupportPoints>
-				<SupportPoint posX="216.033" posY="283.826"/>
-				<SupportPoint posX="106.009" posY="90.2508"/>
-				<SupportPoint posX="136.009" posY="120.251"/>
-				<SupportPoint posX="166.009" posY="150.251"/>
+				<SupportPoint posX="442.953" posY="368.087"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="InitRobotPose" to="WaveForward" eventName="OnPoseReached">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="159.378" posY="363.816"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="WaveBackward" to="WaveForward" eventName="OnPoseReachedWave">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="333.756" posY="508.081"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="WaveForward" to="CounterState" eventName="OnPoseReachedWave">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="373.641" posY="272.606"/>
 			</SupportPoints>
 		</Transition>
 	</Transitions>

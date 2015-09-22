@@ -25,6 +25,12 @@
     <content url="file:///usr/share/ArmarXCore/templates/ComponentTemplate/Test.h.in">
       <sourceFolder url="file:///usr/share/ArmarXCore/templates/ComponentTemplate/Test.h.in" isTestSource="false" />
     </content>
+    <content url="file:///usr/share/ArmarXCore/templates/ComponentTemplate/application.icegrid.xml.in">
+      <sourceFolder url="file:///usr/share/ArmarXCore/templates/ComponentTemplate/application.icegrid.xml.in" isTestSource="false" />
+    </content>
+    <content url="file:///usr/share/ArmarXCore/templates/ComponentTemplate/component.icegrid.xml.in">
+      <sourceFolder url="file:///usr/share/ArmarXCore/templates/ComponentTemplate/component.icegrid.xml.in" isTestSource="false" />
+    </content>
     <content url="file:///usr/share/ArmarXCore/templates/cmake/ProjectBuildTreeSettings.cmake.in">
       <sourceFolder url="file:///usr/share/ArmarXCore/templates/cmake/ProjectBuildTreeSettings.cmake.in" isTestSource="false" />
     </content>

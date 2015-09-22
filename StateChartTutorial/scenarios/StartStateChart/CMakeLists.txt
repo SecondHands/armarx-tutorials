@@ -6,7 +6,11 @@
 #    PickAndPlaceComponent)
 
 set(SCENARIO_COMPONENTS
-    )
+        ConditionHandler
+        SystemObserver
+        RobotControl
+        XMLRemoteStateOfferer
+)
 
 # optional 3rd parameter: "path/to/global/config.cfg"
 armarx_scenario("StartStateChart" "${SCENARIO_COMPONENTS}")

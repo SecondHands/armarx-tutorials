@@ -19,5 +19,7 @@ depends_on_armarx_package(RobotAPI)
 
 add_subdirectory(etc)
 add_subdirectory(source)
+add_subdirectory(scenarios)
 
 install_project()
+

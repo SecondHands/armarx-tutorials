@@ -48,3 +48,7 @@ ttyACM*.log
 datapath*.cfg
 
 *.icegrid.xml
+
+# Idea: clion & pycharm
+**/.idea/workspace.xml
+**/.idea/tasks.xml

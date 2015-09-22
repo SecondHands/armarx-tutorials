@@ -39,7 +39,7 @@ void CounterState::onEnter()
 {
     // put your user code for the enter-point here
     // execution time should be short (<100ms)
-}
+    }
 
 void CounterState::run()
 {
@@ -47,12 +47,19 @@ void CounterState::run()
     // runs in seperate thread, thus can do complex operations
     // should check constantly whether isRunningTaskStopped() returns true
 
-// uncomment this if you need a continous run function. Make sure to use sleep or use blocking wait to reduce cpu load.
-//    while (!isRunningTaskStopped()) // stop run function if returning true
-//    {
-//        // do your calculations
-//    }
+    ARMARX_LOG << "CounterState::run()";
 
+    ChannelRefPtr counterId = in.getcounterId();
+    const int maxValue = in.getcounterMaxValue();
+
+    getContext()->systemObserverPrx->incrementCounter(counterId);
+
+    const int counterValue = counterId->getDataField("value")->getInt();
+    if(counterValue >= maxValue) {
+        emitMaxCountReached();
+    } else {
+        emitMaxCountNotReached();
+    }
 }
 
 void CounterState::onBreak()

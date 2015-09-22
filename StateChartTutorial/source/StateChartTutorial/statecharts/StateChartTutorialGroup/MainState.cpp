@@ -39,6 +39,10 @@ void MainState::onEnter()
 {
     // put your user code for the enter-point here
     // execution time should be short (<100ms)
+    ARMARX_LOG << "MainState::onEnter()";
+    ChannelRefPtr counterId = ChannelRefPtr::dynamicCast(
+            getContext()->systemObserverPrx->startCounter(0, "counterIdCode"));
+    local.setcounterIdMain(counterId);
 }
 
 void MainState::run()

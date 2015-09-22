@@ -27,13 +27,13 @@ namespace armarx
                 }
                 
             public:
-                int getcouterMaxValue() const
+                int getcounterMaxValueMain() const
                 {
-                    return parent->State::getInput< int>("couterMaxValue");
+                    return parent->State::getInput< int>("counterMaxValueMain");
                 }
-                bool iscouterMaxValueSet() const
+                bool iscounterMaxValueMainSet() const
                 {
-                    return parent->State::isInputParameterSet("couterMaxValue");
+                    return parent->State::isInputParameterSet("counterMaxValueMain");
                 }
             }; // class MainStateIn
             
@@ -49,21 +49,21 @@ namespace armarx
                 }
                 
             public:
-                ::armarx::ChannelRefPtr getcouterId() const
+                ::armarx::ChannelRefPtr getcounterIdMain() const
                 {
-                    return parent->State::getLocal< ::armarx::ChannelRef>("couterId");
+                    return parent->State::getLocal< ::armarx::ChannelRef>("counterIdMain");
                 }
-                void setcouterId(const ::armarx::ChannelRef & value) const
+                void setcounterIdMain(const ::armarx::ChannelRef & value) const
                 {
-                    parent->State::setLocal("couterId", value);
+                    parent->State::setLocal("counterIdMain", value);
                 }
-                void setcouterId(const ::armarx::ChannelRefPtr & value) const
+                void setcounterIdMain(const ::armarx::ChannelRefPtr & value) const
                 {
-                    parent->State::setLocal("couterId", *value);
+                    parent->State::setLocal("counterIdMain", *value);
                 }
-                bool iscouterIdSet() const
+                bool iscounterIdMainSet() const
                 {
-                    return parent->State::isLocalParameterSet("couterId");
+                    return parent->State::isLocalParameterSet("counterIdMain");
                 }
             }; // class MainStateLocal
             

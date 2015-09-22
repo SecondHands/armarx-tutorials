@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StatechartGroup name="StateChartTutorialGroup" package="StateChartTutorial" generateContext="true">
-	<Proxies/>
+	<Proxies>
+		<Proxy value="RobotAPICore.kinematicUnit"/>
+	</Proxies>
 	<State filename="CounterState.xml"/>
 	<State filename="MainState.xml" visibility="public"/>
 	<State filename="MoveRobotJoints.xml"/>

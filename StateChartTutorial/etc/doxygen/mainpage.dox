@@ -1,0 +1,15 @@
+/**
+  \mainpage
+
+  StateChartTutorial provides
+
+  \li \subpage StateChartTutorial-Overview "StateChartTutorial Overview"
+  \li \subpage StateChartTutorial-Tutorials "StateChartTutorial Tutorials"
+  \li \subpage StateChartTutorial-HowTos "StateChartTutorial Howtos"
+  \li \subpage StateChartTutorial-FAQ "StateChartTutorial FAQ"
+  \li \subpage StateChartTutorial-Components "StateChartTutorial Components"
+  \li \subpage StateChartTutorial-GuiPlugins "StateChartTutorial Gui Plugins"
+  \li \subpage StateChartTutorial-About "StateChartTutorial About"
+  \li \subpage StateChartTutorial-License "StateChartTutorial License"
+
+*/

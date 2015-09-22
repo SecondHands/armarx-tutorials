@@ -1,0 +1,10 @@
+/**
+
+\page StateChartTutorial-GuiPlugins  StateChartTutorial Gui Plugins
+
+This is a list of Gui Plugins available in StateChartTutorial
+
+\subpage StateChartTutorial-GuiPlugins-WidgetName The page for WidgetName is defined in the WidgetNameWidgetController header file
+
+
+*/

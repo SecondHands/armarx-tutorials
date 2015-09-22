@@ -37,22 +37,33 @@ MoveRobotJoints::MoveRobotJoints(const XMLStateConstructorParams& stateData) :
 
 void MoveRobotJoints::onEnter()
 {
-    // put your user code for the enter-point here
-    // execution time should be short (<100ms)
+    // get the target joint values
+    std::map<std::string, float> jointValueMap = in.getWavingTargetPose();
+
+    //build conditions for OnPoseReached
+    Term poseReachedConditions;
+    const float eps = 0.05f;
+    for (const auto& jointNameValue : jointValueMap) {
+        std::string jointNameDatafield = "Armar3KinematicUnitObserver.jointangles." + jointNameValue.first;
+        float jointValue = jointNameValue.second;
+        Literal jointValueReached(jointNameDatafield, "inrange",
+                                  Literal::createParameterList(jointValue - eps, jointValue + eps));
+        poseReachedConditions = poseReachedConditions && jointValueReached;
+    }
+    installConditionForOnPoseReachedWave(poseReachedConditions);
 }
 
 void MoveRobotJoints::run()
 {
-    // put your user code for the execution-phase here
-    // runs in seperate thread, thus can do complex operations
-    // should check constantly whether isRunningTaskStopped() returns true
+    std::map<std::string, float> jointVelocityMap = in.getWavingVelocity();
 
-// uncomment this if you need a continous run function. Make sure to use sleep or use blocking wait to reduce cpu load.
-//    while (!isRunningTaskStopped()) // stop run function if returning true
-//    {
-//        // do your calculations
-//    }
-
+    NameControlModeMap velocityControlModeMap;
+    for (const auto& jointVelocity : jointVelocityMap) {
+        velocityControlModeMap[jointVelocity.first] = eVelocityControl;
+    }
+    KinematicUnitInterfacePrx kinUnit = getKinematicUnit();
+    kinUnit->switchControlMode(velocityControlModeMap);
+    kinUnit->setJointVelocities(jointVelocityMap);
 }
 
 void MoveRobotJoints::onBreak()

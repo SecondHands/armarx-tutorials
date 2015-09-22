@@ -37,22 +37,36 @@ SetRobotJoints::SetRobotJoints(const XMLStateConstructorParams& stateData) :
 
 void SetRobotJoints::onEnter()
 {
-    // put your user code for the enter-point here
-    // execution time should be short (<100ms)
+    // get the target joint values
+    std::map<std::string, float> jointValueMap = in.getJointTargetPose();
+
+    //build conditions for OnPoseReached
+    Term poseReachedConditions;
+    const float eps = 0.05f;
+    for (const auto& jointNameValue : jointValueMap) {
+        std::string jointNameDatafield = "Armar3KinematicUnitObserver.jointangles." + jointNameValue.first;
+        float jointValue = jointNameValue.second;
+        Literal jointValueReached(jointNameDatafield, "inrange",
+                                  Literal::createParameterList(jointValue - eps, jointValue + eps));
+        poseReachedConditions = poseReachedConditions && jointValueReached;
+    }
+    installConditionForOnPoseReached(poseReachedConditions);
 }
 
 void SetRobotJoints::run()
 {
-    // put your user code for the execution-phase here
-    // runs in seperate thread, thus can do complex operations
-    // should check constantly whether isRunningTaskStopped() returns true
-
-// uncomment this if you need a continous run function. Make sure to use sleep or use blocking wait to reduce cpu load.
-//    while (!isRunningTaskStopped()) // stop run function if returning true
-//    {
-//        // do your calculations
-//    }
-
+    std::map<std::string, float> jointValueMap = in.getJointTargetPose();
+    NameControlModeMap positionControlModeMap;
+    //sets to position control mode the joints in the map
+    for (const auto& jointNameValue : jointValueMap)
+    {
+        positionControlModeMap[jointNameValue.first] = ePositionControl;
+    }
+    KinematicUnitInterfacePrx kinUnit = getKinematicUnit();
+    //switch to position control
+    kinUnit->switchControlMode(positionControlModeMap);
+    // set the angles defined by the joint target pose
+    kinUnit->setJointAngles(jointValueMap);
 }
 
 void SetRobotJoints::onBreak()

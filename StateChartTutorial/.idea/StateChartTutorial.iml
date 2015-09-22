@@ -18,6 +18,12 @@
       <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/MainState.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/MainState.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/MainState.xml" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/MoveRobotJoints.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/MoveRobotJoints.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/MoveRobotJoints.xml" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/SetRobotJoints.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/SetRobotJoints.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/SetRobotJoints.xml" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/StateChartTutorialGroup.scgxml" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/StateChartTutorialGroupRemoteStateOfferer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/StateChartTutorialGroupRemoteStateOfferer.h" isTestSource="false" />
@@ -99,6 +105,12 @@
           <root url="file://$MODULE_DIR$/source/StateChartTutorial/interface/CMakeLists.txt" />
           <root url="file://$MODULE_DIR$/source/StateChartTutorial/CMakeLists.txt" />
           <root url="file://$MODULE_DIR$/source/CMakeLists.txt" />
+          <root url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/SetRobotJoints.cpp" />
+          <root url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/MoveRobotJoints.h" />
+          <root url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/SetRobotJoints.xml" />
+          <root url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/SetRobotJoints.h" />
+          <root url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/MoveRobotJoints.cpp" />
+          <root url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/MoveRobotJoints.xml" />
           <root url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/StateChartTutorialGroupRemoteStateOfferer.cpp" />
           <root url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/CounterState.cpp" />
           <root url="file://$MODULE_DIR$/source/StateChartTutorial/statecharts/StateChartTutorialGroup/StateChartTutorialGroup.scgxml" />

@@ -16,6 +16,12 @@ armarx_project("PickAndPlaceTutorial")
 # Specify each ArmarX Package dependency with the following macro
 # depends_on_armarx_package(ArmarXGui "OPTIONAL")
 
+depends_on_armarx_package(RobotAPI)
+depends_on_armarx_package(MemoryX)
+depends_on_armarx_package(ArmarXSimulation)
+depends_on_armarx_package(RobotSkillTemplates)
+
+
 add_subdirectory(etc)
 add_subdirectory(source)
 

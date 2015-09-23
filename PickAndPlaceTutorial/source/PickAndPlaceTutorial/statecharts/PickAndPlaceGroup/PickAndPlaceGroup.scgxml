@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StatechartGroup name="PickAndPlaceGroup" package="PickAndPlaceTutorial" generateContext="true">
-	<Proxies/>
+	<Proxies>
+		<Proxy value="ArmarXSimulationInterfaces.simulatorInterface"/>
+		<Proxy value="MemoryXInterfaces.priorKnowledge"/>
+	</Proxies>
 	<State filename="PickAndPlace.xml" visibility="public"/>
 </StatechartGroup>
 

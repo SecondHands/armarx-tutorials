@@ -28,13 +28,14 @@ using namespace armarx;
 
 void RNGCallerComponent::onInitComponent()
 {
-
+    usingProxy(getProperty<std::string>("RNGProviderName").getValue());
 }
 
 
 void RNGCallerComponent::onConnectComponent()
 {
-
+    interfacePrx = getProxy<RNGProviderComponentInterfacePrx>(getProperty<std::string>("RNGProviderName").getValue());
+    ARMARX_IMPORTANT << "RNGProviderComponent output over Ice:  " << interfacePrx->generateRandomInt();
 }
 
 

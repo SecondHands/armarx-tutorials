@@ -36,7 +36,7 @@ void RNGProviderComponent::onInitComponent()
 
 void RNGProviderComponent::onConnectComponent()
 {
-    ARMARX_LOG << "RNG output: " << generateRandomInt();
+    ARMARX_IMPORTANT << "RNG provider connected: " << generateRandomInt();
 }
 
 
@@ -58,5 +58,7 @@ armarx::PropertyDefinitionsPtr RNGProviderComponent::createPropertyDefinitions()
 }
 
 ::Ice::Int RNGProviderComponent::generateRandomInt(const Ice::Current &) {
-    return gen();
+    unsigned int rnd = gen();
+    ARMARX_IMPORTANT << "RNG provider generated output: " << rnd;
+    return rnd;
 }

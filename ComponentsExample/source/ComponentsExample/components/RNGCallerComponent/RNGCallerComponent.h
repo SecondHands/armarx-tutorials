@@ -25,6 +25,7 @@
 
 
 #include <ArmarXCore/core/Component.h>
+#include <ComponentsExample/interface/RNGComponentProviderInterface.h>
 
 namespace armarx
 {
@@ -41,6 +42,8 @@ namespace armarx
         {
             //defineRequiredProperty<std::string>("PropertyName", "Description");
             //defineOptionalProperty<std::string>("PropertyName", "DefaultValue", "Description");
+            defineOptionalProperty<std::string>("RNGProviderName", "RNGProviderComponent",
+                                                "Name of the component that offers the RNG");
         }
     };
 
@@ -66,6 +69,8 @@ namespace armarx
         {
             return "RNGCallerComponent";
         }
+    private:
+        RNGProviderComponentInterfacePrx interfacePrx;
 
     protected:
         /**

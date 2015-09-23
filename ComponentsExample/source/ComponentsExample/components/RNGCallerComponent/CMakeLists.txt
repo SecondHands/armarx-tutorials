@@ -9,7 +9,7 @@ armarx_component_set_name("RNGCallerComponent")
 #    include_directories(${MyLib_INCLUDE_DIRS})
 #endif()
 
-set(COMPONENT_LIBS ArmarXCoreInterfaces ArmarXCore)
+set(COMPONENT_LIBS ArmarXCoreInterfaces ArmarXCore ComponentsExampleInterfaces)
 
 set(SOURCES
 ./RNGCallerComponent.cpp

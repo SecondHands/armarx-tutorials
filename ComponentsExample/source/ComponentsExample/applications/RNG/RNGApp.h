@@ -29,6 +29,7 @@
 #include <ArmarXCore/core/application/Application.h>
 #include <ArmarXCore/core/Component.h>
 #include <ComponentsExample/components/RNGProviderComponent/RNGProviderComponent.h>
+#include <ComponentsExample/components/RNGCallerComponent/RNGCallerComponent.h>
 
 namespace armarx
 {
@@ -48,6 +49,7 @@ namespace armarx
                    Ice::PropertiesPtr properties)
         {
             registry->addObject( armarx::Component::create<RNGProviderComponent>(properties) );
+            registry->addObject( armarx::Component::create<RNGCallerComponent>(properties) );
         }
     };
 }

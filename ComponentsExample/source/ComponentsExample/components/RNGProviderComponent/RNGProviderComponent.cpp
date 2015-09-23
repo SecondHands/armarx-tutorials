@@ -22,7 +22,6 @@
 
 #include "RNGProviderComponent.h"
 
-
 using namespace armarx;
 
 
@@ -30,13 +29,14 @@ using namespace armarx;
 
 void RNGProviderComponent::onInitComponent()
 {
-
+    std::time_t now = std::time(0);
+    gen = boost::random::mt19937{static_cast<std::uint32_t>(now)};
 }
 
 
 void RNGProviderComponent::onConnectComponent()
 {
-
+    ARMARX_LOG << "RNG output: " << generateRandomInt();
 }
 
 
@@ -57,6 +57,6 @@ armarx::PropertyDefinitionsPtr RNGProviderComponent::createPropertyDefinitions()
                                       getConfigIdentifier()));
 }
 
-::Ice::Int RNGProviderComponent::generateRandomInt(const Ice::Current &current) {
-    return 0;
+::Ice::Int RNGProviderComponent::generateRandomInt(const Ice::Current &) {
+    return gen();
 }

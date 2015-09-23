@@ -25,6 +25,7 @@
 
 #include <ArmarXCore/core/Component.h>
 #include <ComponentsExample/interface/RNGComponentProviderInterface.h>
+#include <boost/random/mersenne_twister.hpp>
 
 namespace armarx
 {
@@ -68,6 +69,9 @@ namespace armarx
             return "RNGProviderComponent";
         }
 
+    private:
+        boost::random::mt19937 gen;
+
     protected:
         /**
          * @see armarx::ManagedIceObject::onInitComponent()
@@ -95,7 +99,7 @@ namespace armarx
         virtual armarx::PropertyDefinitionsPtr createPropertyDefinitions();
 
     public:
-        virtual ::Ice::Int generateRandomInt(const Ice::Current &current);
+        virtual ::Ice::Int generateRandomInt(const Ice::Current &current = ::Ice::Current());
     };
 }
 

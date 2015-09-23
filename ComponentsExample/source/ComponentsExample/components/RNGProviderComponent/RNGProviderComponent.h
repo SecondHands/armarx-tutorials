@@ -93,6 +93,9 @@ namespace armarx
          * @see PropertyUser::createPropertyDefinitions()
          */
         virtual armarx::PropertyDefinitionsPtr createPropertyDefinitions();
+
+    public:
+        virtual ::Ice::Int generateRandomInt(const Ice::Current &current);
     };
 }
 

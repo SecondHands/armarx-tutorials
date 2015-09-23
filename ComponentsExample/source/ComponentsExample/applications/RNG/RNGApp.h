@@ -28,7 +28,7 @@
 
 #include <ArmarXCore/core/application/Application.h>
 #include <ArmarXCore/core/Component.h>
-
+#include <ComponentsExample/components/RNGProviderComponent/RNGProviderComponent.h>
 
 namespace armarx
 {
@@ -47,7 +47,7 @@ namespace armarx
         void setup(const armarx::ManagedIceObjectRegistryInterfacePtr& registry,
                    Ice::PropertiesPtr properties)
         {
-            registry->addObject( armarx::Component::create<RNG>(properties) );
+            registry->addObject( armarx::Component::create<RNGProviderComponent>(properties) );
         }
     };
 }

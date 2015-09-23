@@ -9,7 +9,7 @@ armarx_component_set_name("RNGApp")
 #    include_directories(${MyLib_INCLUDE_DIRS})
 #endif()
 
-set(COMPONENT_LIBS ArmarXCoreInterfaces ArmarXCore)
+set(COMPONENT_LIBS ArmarXCoreInterfaces ArmarXCore RNGProviderComponent)
 
 set(EXE_SOURCE RNGApp.h main.cpp)
 

@@ -26,6 +26,8 @@
 using namespace armarx;
 
 
+
+
 void RNGProviderComponent::onInitComponent()
 {
 
@@ -55,3 +57,6 @@ armarx::PropertyDefinitionsPtr RNGProviderComponent::createPropertyDefinitions()
                                       getConfigIdentifier()));
 }
 
+::Ice::Int RNGProviderComponent::generateRandomInt(const Ice::Current &current) {
+    return 0;
+}

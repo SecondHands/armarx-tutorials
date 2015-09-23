@@ -95,7 +95,13 @@
 	</Substates>
 	<Events/>
 	<StartState substateName="MovePlatformToPick">
-		<ParameterMappings/>
+		<ParameterMappings>
+			<ParameterMapping sourceType="Parent" from="OrientationalAccuracyRadPlatform" to="orientationalAccuracy"/>
+			<ParameterMapping sourceType="Parent" from="PositionalAccuracyPlatform" to="positionalAccuracy"/>
+			<ParameterMapping sourceType="Parent" from="PosPick" to="targetPositions"/>
+			<ParameterMapping sourceType="Parent" from="TimeToMove" to="timeoutMoveTo"/>
+			<ParameterMapping sourceType="Parent" from="TimeToWait" to="waitAfterLast"/>
+		</ParameterMappings>
 	</StartState>
 	<Transitions>
 		<Transition from="MovePlatformToPick" to="Failure" eventName="Failure">
@@ -107,7 +113,23 @@
 			</SupportPoints>
 		</Transition>
 		<Transition from="MovePlatformToPick" to="GraspObject" eventName="Success">
-			<ParameterMappings/>
+			<ParameterMappings>
+				<ParameterMapping sourceType="Parent" from="CloseHandShapeName" to="CloseHandShapeName"/>
+				<ParameterMapping sourceType="Parent" from="GraspName" to="GraspName"/>
+				<ParameterMapping sourceType="Parent" from="GraspPreposeName" to="GraspPreposeName"/>
+				<ParameterMapping sourceType="Parent" from="GraspSetName" to="GraspSetName"/>
+				<ParameterMapping sourceType="Parent" from="HandNameInMemory" to="HandNameInMemory"/>
+				<ParameterMapping sourceType="Parent" from="HandNameInRobotModel" to="HandNameInRobotModel"/>
+				<ParameterMapping sourceType="Parent" from="KinematicChainName" to="KinematicChainName"/>
+				<ParameterMapping sourceType="Parent" from="ObjectName" to="ObjectName"/>
+				<ParameterMapping sourceType="Parent" from="OpenHandShapeName" to="OpenHandShapeName"/>
+				<ParameterMapping sourceType="Parent" from="OrientationalAccuracyRadGrasp" to="OrientationalAccuracyRadGrasp"/>
+				<ParameterMapping sourceType="Parent" from="OrientationalAccuracyRadGraspPrepose" to="OrientationalAccuracyRadGraspPrepose"/>
+				<ParameterMapping sourceType="Parent" from="OrientationalAccuracyRadLiftHand" to="OrientationalAccuracyRadLiftHand"/>
+				<ParameterMapping sourceType="Parent" from="PositionalAccuracyGrasp" to="PositionalAccuracyGrasp"/>
+				<ParameterMapping sourceType="Parent" from="PositionalAccuracyGraspPrepose" to="PositionalAccuracyGraspPrepose"/>
+				<ParameterMapping sourceType="Parent" from="PositionalAccuracyLiftHand" to="PositionalAccuracyLiftHand"/>
+			</ParameterMappings>
 			<ParameterMappingsToParentsLocal/>
 			<ParameterMappingsToParentsOutput/>
 			<SupportPoints>
@@ -139,7 +161,19 @@
 			</SupportPoints>
 		</Transition>
 		<Transition from="MovePlatformToPlace" to="PlaceObjectWrapper" eventName="Success">
-			<ParameterMappings/>
+			<ParameterMappings>
+				<ParameterMapping sourceType="Parent" from="ForceSensorDatafieldName" to="ForceSensorDatafieldName"/>
+				<ParameterMapping sourceType="Parent" from="ForceThreshold" to="ForceThreshold"/>
+				<ParameterMapping sourceType="Parent" from="GraspName" to="GraspName"/>
+				<ParameterMapping sourceType="Parent" from="GraspSetName" to="GraspSetName"/>
+				<ParameterMapping sourceType="Parent" from="HandNameInRobotModel" to="HandNameForHandUnit"/>
+				<ParameterMapping sourceType="Parent" from="HandNameInMemory" to="HandNameInMemory"/>
+				<ParameterMapping sourceType="Parent" from="OpenHandShapeName" to="HandShapeOpenName"/>
+				<ParameterMapping sourceType="Parent" from="KinematicChainName" to="KinematicChainName"/>
+				<ParameterMapping sourceType="Parent" from="ObjectName" to="ObjectName"/>
+				<ParameterMapping sourceType="Parent" from="TcpTargetPose" to="PlacePosition"/>
+				<ParameterMapping sourceType="Parent" from="TorqueThreshold" to="TorqueThreshold"/>
+			</ParameterMappings>
 			<ParameterMappingsToParentsLocal/>
 			<ParameterMappingsToParentsOutput/>
 			<SupportPoints>
@@ -155,7 +189,13 @@
 			</SupportPoints>
 		</Transition>
 		<Transition from="PlaceObjectWrapper" to="MovePlatformToFinal" eventName="Success">
-			<ParameterMappings/>
+			<ParameterMappings>
+				<ParameterMapping sourceType="Parent" from="OrientationalAccuracyRadPlatform" to="orientationalAccuracy"/>
+				<ParameterMapping sourceType="Parent" from="PositionalAccuracyPlatform" to="positionalAccuracy"/>
+				<ParameterMapping sourceType="Parent" from="PosFinal" to="targetPositions"/>
+				<ParameterMapping sourceType="Parent" from="TimeToMove" to="timeoutMoveTo"/>
+				<ParameterMapping sourceType="Parent" from="TimeToWait" to="waitAfterLast"/>
+			</ParameterMappings>
 			<ParameterMappingsToParentsLocal/>
 			<ParameterMappingsToParentsOutput/>
 			<SupportPoints>
@@ -179,7 +219,13 @@
 			</SupportPoints>
 		</Transition>
 		<Transition from="GraspObject" to="MovePlatformToPlace" eventName="GraspFinished">
-			<ParameterMappings/>
+			<ParameterMappings>
+				<ParameterMapping sourceType="Parent" from="OrientationalAccuracyRadPlatform" to="orientationalAccuracy"/>
+				<ParameterMapping sourceType="Parent" from="PositionalAccuracyPlatform" to="positionalAccuracy"/>
+				<ParameterMapping sourceType="Parent" from="PosPick" to="targetPositions"/>
+				<ParameterMapping sourceType="Parent" from="TimeToMove" to="timeoutMoveTo"/>
+				<ParameterMapping sourceType="Parent" from="TimeToWait" to="waitAfterLast"/>
+			</ParameterMappings>
 			<ParameterMappingsToParentsLocal/>
 			<ParameterMappingsToParentsOutput/>
 			<SupportPoints>

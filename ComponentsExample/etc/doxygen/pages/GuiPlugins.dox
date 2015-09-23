@@ -1,0 +1,10 @@
+/**
+
+\page ComponentsExample-GuiPlugins  ComponentsExample Gui Plugins
+
+This is a list of Gui Plugins available in ComponentsExample
+
+\subpage ComponentsExample-GuiPlugins-WidgetName The page for WidgetName is defined in the WidgetNameWidgetController header file
+
+
+*/

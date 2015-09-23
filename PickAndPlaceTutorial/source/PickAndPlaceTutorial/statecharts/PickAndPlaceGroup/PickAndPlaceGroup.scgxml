@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StatechartGroup name="PickAndPlaceGroup" package="PickAndPlaceTutorial" generateContext="true">
 	<Proxies/>
-	<State filename="PickAndPlace.xml"/>
+	<State filename="PickAndPlace.xml" visibility="public"/>
 </StatechartGroup>
 

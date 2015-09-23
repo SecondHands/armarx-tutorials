@@ -1,16 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<State version="1.2" name="PickAndPlace" uuid="FC59891F-E450-4BBF-9F21-36B95D7FC46A" width="800" height="600" type="Normal State">
+<State version="1.2" name="PickAndPlace" uuid="FC59891F-E450-4BBF-9F21-36B95D7FC46A" width="871.272" height="732.805" type="Normal State">
 	<InputParameters/>
 	<OutputParameters/>
 	<LocalParameters/>
 	<Substates>
-		<EndState name="Failure" event="Failure" left="230.93" top="352.1" boundingSquareSize="200"/>
-		<EndState name="Success" event="Success" left="128.03" top="394.1" boundingSquareSize="200"/>
+		<EndState name="Failure" event="Failure" left="316.094" top="292.233" boundingSquareSize="200"/>
+		<RemoteState name="GraspObject" refuuid="49B2DD1B-A975-446D-B35D-6B0BFCDCD353" proxyName="GraspObjectGroupRemoteStateOfferer" left="26.1982" top="555.678" boundingSquareSize="200"/>
+		<RemoteState name="MovePlatformToFinal" refuuid="DB4A1244-3587-4F87-909F-B7274E4842C5" proxyName="PlatformGroupRemoteStateOfferer" left="644.37" top="349.944" boundingSquareSize="200"/>
+		<RemoteState name="MovePlatformToPick" refuuid="DB4A1244-3587-4F87-909F-B7274E4842C5" proxyName="PlatformGroupRemoteStateOfferer" left="26.1982" top="235.208" boundingSquareSize="200"/>
+		<RemoteState name="MovePlatformToPlace" refuuid="DB4A1244-3587-4F87-909F-B7274E4842C5" proxyName="PlatformGroupRemoteStateOfferer" left="345.836" top="536.258" boundingSquareSize="200"/>
+		<RemoteState name="PlaceObjectWrapper" refuuid="A424A34B-CB63-4D6B-9360-A3590A717D2D" proxyName="PlaceObjectGroupRemoteStateOfferer" left="646.574" top="562.261" boundingSquareSize="200"/>
+		<EndState name="Success" event="Success" left="646.574" top="146.961" boundingSquareSize="200"/>
 	</Substates>
 	<Events/>
-	<StartState substateName="Success">
+	<StartState substateName="MovePlatformToPick">
 		<ParameterMappings/>
 	</StartState>
-	<Transitions/>
+	<Transitions>
+		<Transition from="MovePlatformToPick" to="Failure" eventName="Failure">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="271.146" posY="345.153"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="MovePlatformToPick" to="GraspObject" eventName="Success">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="126.198" posY="478.521"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="MovePlatformToFinal" to="Failure" eventName="Failure">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="580.232" posY="402.521"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="MovePlatformToFinal" to="Success" eventName="Success">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="745.472" posY="329.885"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="MovePlatformToPlace" to="Failure" eventName="Failure">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="430.965" posY="495.678"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="MovePlatformToPlace" to="PlaceObjectWrapper" eventName="Success">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="596.205" posY="630.692"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="PlaceObjectWrapper" to="Failure" eventName="Failure">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="581.334" posY="502.247"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="PlaceObjectWrapper" to="MovePlatformToFinal" eventName="Success">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="745.472" posY="537.535"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="GraspObject" to="Failure" eventName="InitializingGraspingFailed">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="271.146" posY="500.601"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="GraspObject" to="Failure" eventName="Failure">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="337.83" posY="573.075"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="GraspObject" to="MovePlatformToPlace" eventName="GraspFinished">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="286.017" posY="629.046"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="GraspObject" to="Failure" eventName="ObjectLost">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="204.462" posY="428.127"/>
+			</SupportPoints>
+		</Transition>
+	</Transitions>
 </State>
 

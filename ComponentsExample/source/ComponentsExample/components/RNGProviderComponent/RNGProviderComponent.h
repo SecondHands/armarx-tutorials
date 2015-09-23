@@ -23,8 +23,8 @@
 #ifndef _ARMARX_COMPONENT_ComponentsExample_RNGProviderComponent_H
 #define _ARMARX_COMPONENT_ComponentsExample_RNGProviderComponent_H
 
-
 #include <ArmarXCore/core/Component.h>
+#include <ComponentsExample/interface/RNGComponentProviderInterface.h>
 
 namespace armarx
 {
@@ -56,7 +56,8 @@ namespace armarx
      * Detailed description of class RNGProviderComponent.
      */
     class RNGProviderComponent :
-        virtual public armarx::Component
+        virtual public armarx::Component,
+        virtual public armarx::RNGProviderComponentInterface
     {
     public:
         /**

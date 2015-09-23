@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <State version="1.2" name="PickAndPlace" uuid="FC59891F-E450-4BBF-9F21-36B95D7FC46A" width="871.272" height="732.805" type="Normal State">
-	<InputParameters/>
+	<InputParameters>
+		<Parameter name="CloseHandShapeName" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Close Preshape"}}' docValue="Close Preshape"/>
+		</Parameter>
+		<Parameter name="ForceSensorDatafieldName" type="::armarx::StringVariantData" docType="string" optional="yes">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"TCP R"}}' docValue="TCP R"/>
+		</Parameter>
+		<Parameter name="ForceThreshold" type="::armarx::FloatVariantData" docType="float" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":2.0}}' docValue="2"/>
+			<DefaultValue profile="Armar3Simulation" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":1000000.0}}' docValue="1000000"/>
+		</Parameter>
+		<Parameter name="GraspName" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Grasp_Right_2_Grasp"}}' docValue="Grasp_Right_2_Grasp"/>
+		</Parameter>
+		<Parameter name="GraspPreposeName" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Grasp_Right_2_Prepose"}}' docValue="Grasp_Right_2_Prepose"/>
+		</Parameter>
+		<Parameter name="GraspSetName" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"TCP R"}}' docValue="TCP R"/>
+		</Parameter>
+		<Parameter name="HandNameInMemory" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"handright3a"}}' docValue="handright3a"/>
+		</Parameter>
+		<Parameter name="HandNameInRobotModel" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"TCP R"}}' docValue="TCP R"/>
+		</Parameter>
+		<Parameter name="KinematicChainName" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"HipYawRightArm"}}' docValue="HipYawRightArm"/>
+		</Parameter>
+		<Parameter name="ObjectName" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"vitaliscereal"}}' docValue="vitaliscereal"/>
+		</Parameter>
+		<Parameter name="OpenHandShapeName" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Open Preshape"}}' docValue="Open Preshape"/>
+		</Parameter>
+		<Parameter name="OrientationalAccuracyRadGrasp" type="::armarx::FloatVariantData" docType="float" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":0.2617999911308289}}' docValue="0.261799991130829"/>
+		</Parameter>
+		<Parameter name="OrientationalAccuracyRadGraspPrepose" type="::armarx::FloatVariantData" docType="float" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":0.3490999937057495}}' docValue="0.34909999370575"/>
+		</Parameter>
+		<Parameter name="OrientationalAccuracyRadLiftHand" type="::armarx::FloatVariantData" docType="float" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":1.0}}' docValue="1"/>
+		</Parameter>
+		<Parameter name="OrientationalAccuracyRadPlatform" type="::armarx::FloatVariantData" docType="float" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":2.0}}' docValue="2"/>
+		</Parameter>
+		<Parameter name="PosFinal" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":3000.0,"y":6000.0,"z":2.329999923706055}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="3000\n6000\n2.33"/>
+		</Parameter>
+		<Parameter name="PosPick" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":3400.0,"y":7100.0,"z":-1.570000052452087}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="3400\n7100\n-1.57"/>
+		</Parameter>
+		<Parameter name="PosPlace" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":2930.0,"y":5610.0,"z":2.329999923706055}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="2930\n5610\n2.33"/>
+		</Parameter>
+		<Parameter name="PositionalAccuracyGrasp" type="::armarx::FloatVariantData" docType="float" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":15.0}}' docValue="15"/>
+		</Parameter>
+		<Parameter name="PositionalAccuracyGraspPrepose" type="::armarx::FloatVariantData" docType="float" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":25.0}}' docValue="25"/>
+		</Parameter>
+		<Parameter name="PositionalAccuracyLiftHand" type="::armarx::FloatVariantData" docType="float" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":60.0}}' docValue="60"/>
+		</Parameter>
+		<Parameter name="PositionalAccuracyPlatform" type="::armarx::FloatVariantData" docType="float" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":10.0}}' docValue="10"/>
+		</Parameter>
+		<Parameter name="TcpTargetPose" type="::armarx::FramedPositionBase" docType="FramedPosition" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedPositionBase","value":{"agent":"Armar3","frame":"Armar3_Base","x":150.0,"y":670.0,"z":930.0}}}' docValue="150\n670\n930\nframe: Armar3_Base agent: Armar3"/>
+		</Parameter>
+		<Parameter name="TimeToMove" type="::armarx::IntVariantData" docType="int" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::IntVariantData","value":50000}}' docValue="50000"/>
+		</Parameter>
+		<Parameter name="TimeToWait" type="::armarx::IntVariantData" docType="int" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::IntVariantData","value":1000}}' docValue="1000"/>
+		</Parameter>
+		<Parameter name="TorqueThreshold" type="::armarx::FloatVariantData" docType="float" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":1.0}}' docValue="1"/>
+			<DefaultValue profile="Armar3Simulation" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":100000.0}}' docValue="100000"/>
+		</Parameter>
+	</InputParameters>
 	<OutputParameters/>
 	<LocalParameters/>
 	<Substates>

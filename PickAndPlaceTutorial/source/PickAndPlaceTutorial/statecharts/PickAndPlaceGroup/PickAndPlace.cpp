@@ -22,6 +22,13 @@
 
 #include "PickAndPlace.h"
 
+//for handeling objects
+#include <MemoryX/libraries/memorytypes/entity/ObjectClass.h>
+#include <MemoryX/libraries/memorytypes/MemoryXTypesObjectFactories.h>
+#include <MemoryX/core/MemoryXCoreObjectFactories.h>
+//for calculations
+#include <VirtualRobot/MathTools.h>
+
 using namespace armarx;
 using namespace PickAndPlaceGroup;
 
@@ -39,6 +46,37 @@ void PickAndPlace::onEnter()
 {
     // put your user code for the enter-point here
     // execution time should be short (<100ms)
+    armarx::SimulatorInterfacePrx simulatorPrx = getSimulatorInterface();
+    memoryx::PriorKnowledgeInterfacePrx priorKnowledgeProxy = getPriorKnowledge();
+    std::string objClassName = in.getObjectName();
+    //we'll assume that the instance - if there is any - is named the same as the class
+    std::string objInstanceName = objClassName;
+    memoryx::PersistentObjectClassSegmentBasePrx classesSegmentPrx = priorKnowledgeProxy->getObjectClassesSegment();
+    memoryx::EntityBasePtr classEntity = classesSegmentPrx->getEntityByName(objClassName);
+    if (!classEntity)
+    {
+        ARMARX_ERROR_S << "No memory entity found with name " << objClassName;
+    }
+    memoryx::ObjectClassPtr objectClass = memoryx::ObjectClassPtr::dynamicCast(classEntity);
+    if (!objectClass)
+    {
+        ARMARX_ERROR_S << "Could not cast entitiy to object class, name: " << objClassName;
+    }
+    Eigen::Vector3f pos = {4200, 7000, 1030};
+    Eigen::Matrix4f globalPose;
+    VirtualRobot::MathTools::rpy2eigen4f(-0.5*M_PI, 0, -0.5*M_PI, globalPose);
+    globalPose.block<3,1>(0,3) = pos;
+    armarx::PosePtr pose = new armarx::Pose(globalPose);
+    if (!simulatorPrx->hasObject(objInstanceName))
+    {
+        ARMARX_IMPORTANT_S << "Adding object " << objClassName << " at pose:" << *pose;
+        simulatorPrx->addObject(objectClass, objInstanceName, pose, false);
+    }
+    else
+    {
+        ARMARX_IMPORTANT_S << "Moving object " << objClassName << " to pose:" << *pose;
+        simulatorPrx->setObjectPose(objInstanceName, pose);
+    }
 }
 
 void PickAndPlace::run()

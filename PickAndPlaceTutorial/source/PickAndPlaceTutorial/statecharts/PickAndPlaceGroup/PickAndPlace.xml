@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<State version="1.2" name="PickAndPlace" uuid="FC59891F-E450-4BBF-9F21-36B95D7FC46A" width="800" height="600" type="Normal State">
+	<InputParameters/>
+	<OutputParameters/>
+	<LocalParameters/>
+	<Substates>
+		<EndState name="Failure" event="Failure" left="230.93" top="352.1" boundingSquareSize="200"/>
+		<EndState name="Success" event="Success" left="128.03" top="394.1" boundingSquareSize="200"/>
+	</Substates>
+	<Events/>
+	<StartState substateName="Success">
+		<ParameterMappings/>
+	</StartState>
+	<Transitions/>
+</State>
+

@@ -12,6 +12,7 @@ set(ARMARX_ENABLE_AUTO_CODE_FORMATTING TRUE)
 
 # Name for the project
 armarx_project("ComponentsExample")
+depends_on_armarx_package(ArmarXGui "OPTIONAL")
 
 # Specify each ArmarX Package dependency with the following macro
 # depends_on_armarx_package(ArmarXGui "OPTIONAL")

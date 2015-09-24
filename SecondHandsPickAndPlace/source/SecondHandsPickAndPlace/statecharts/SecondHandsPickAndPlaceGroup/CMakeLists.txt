@@ -9,23 +9,23 @@ armarx_component_set_name("SecondHandsPickAndPlaceGroup")
 #    include_directories(${MyLib_INCLUDE_DIRS})
 #endif()
 
-#find_package(Eigen3 QUIET)
-#find_package(Simox QUIET)
+find_package(Eigen3 QUIET)
+find_package(Simox QUIET)
 
-#
-#armarx_build_if(Eigen3_FOUND "Eigen3 not available")
-#armarx_build_if(Simox_FOUND "Simox-VirtualRobot not available")
 
-#
-#if (Eigen3_FOUND AND Simox_FOUND)
-#    include_directories(
-#        ${Eigen3_INCLUDE_DIR}
-#        ${Simox_INCLUDE_DIRS}
-#    )
-#endif()
+armarx_build_if(Eigen3_FOUND "Eigen3 not available")
+armarx_build_if(Simox_FOUND "Simox-VirtualRobot not available")
+
+
+if (Eigen3_FOUND AND Simox_FOUND)
+   include_directories(
+       ${Eigen3_INCLUDE_DIR}
+       ${Simox_INCLUDE_DIRS}
+   )
+endif()
 
 set(COMPONENT_LIBS
-#   RobotAPIInterfaces RobotAPICore
+   RobotAPIInterfaces RobotAPICore
     ArmarXCoreInterfaces ArmarXCore ArmarXCoreStatechart ArmarXCoreObservers)
 
 # Sources

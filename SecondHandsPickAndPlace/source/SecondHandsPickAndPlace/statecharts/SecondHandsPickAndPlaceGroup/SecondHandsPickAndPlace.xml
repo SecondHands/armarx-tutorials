@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<State version="1.2" name="SecondHandsPickAndPlace" uuid="6F3D6E97-9D64-408E-8741-AA1B090EC1A8" width="800" height="600" type="Normal State">
+	<InputParameters/>
+	<OutputParameters/>
+	<LocalParameters/>
+	<Substates>
+		<EndState name="Failure" event="Failure" left="575.449" top="120.4" boundingSquareSize="200"/>
+		<RemoteState name="PickAndPlace" refuuid="FC59891F-E450-4BBF-9F21-36B95D7FC46A" proxyName="PickAndPlaceGroupRemoteStateOfferer" left="58.709" top="309.387" boundingSquareSize="200"/>
+		<EndState name="Success" event="Success" left="577.44" top="342.115" boundingSquareSize="200"/>
+	</Substates>
+	<Events/>
+	<StartState substateName="PickAndPlace">
+		<ParameterMappings/>
+	</StartState>
+	<Transitions>
+		<Transition from="PickAndPlace" to="Failure" eventName="Failure">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="417.079" posY="294.447"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="PickAndPlace" to="Success" eventName="Success">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="418.074" posY="405.305"/>
+			</SupportPoints>
+		</Transition>
+	</Transitions>
+</State>
+

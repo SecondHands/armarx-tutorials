@@ -57,7 +57,7 @@
 			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":2930.0,"y":5610.0,"z":2.329999923706055}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="2930\n5610\n2.33"/>
 		</Parameter>
 		<Parameter name="PositionalAccuracyGrasp" type="::armarx::FloatVariantData" docType="float" optional="no">
-			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":15.0}}' docValue="15"/>
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":27.0}}' docValue="27"/>
 		</Parameter>
 		<Parameter name="PositionalAccuracyGraspPrepose" type="::armarx::FloatVariantData" docType="float" optional="no">
 			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":25.0}}' docValue="25"/>

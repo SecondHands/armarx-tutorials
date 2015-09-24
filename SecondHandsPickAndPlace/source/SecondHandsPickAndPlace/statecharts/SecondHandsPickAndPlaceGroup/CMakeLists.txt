@@ -32,12 +32,14 @@ set(COMPONENT_LIBS
 
 set(SOURCES
 SecondHandsPickAndPlaceGroupRemoteStateOfferer.cpp
+./SecondHandsPickAndPlace.cpp
 #@TEMPLATE_LINE@@COMPONENT_PATH@/@COMPONENT_NAME@.cpp
 )
 
 set(HEADERS
 SecondHandsPickAndPlaceGroupRemoteStateOfferer.h
 SecondHandsPickAndPlaceGroup.scgxml
+./SecondHandsPickAndPlace.h
 #@TEMPLATE_LINE@@COMPONENT_PATH@/@COMPONENT_NAME@.h
 ./SecondHandsPickAndPlace.xml
 ./SecondHandsPickAndPlace.xml

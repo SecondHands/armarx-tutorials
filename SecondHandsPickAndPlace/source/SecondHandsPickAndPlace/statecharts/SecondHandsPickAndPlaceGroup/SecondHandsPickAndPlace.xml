@@ -17,7 +17,14 @@
 	</Substates>
 	<Events/>
 	<StartState substateName="PickAndPlace">
-		<ParameterMappings/>
+		<ParameterMappings>
+			<ParameterMapping sourceType="Parent" from="GraspName" to="GraspName"/>
+			<ParameterMapping sourceType="Parent" from="GraspPreposeName" to="GraspPreposeName"/>
+			<ParameterMapping sourceType="Parent" from="ObjectName" to="ObjectName"/>
+			<ParameterMapping sourceType="Parent" from="PosFinal" to="PosFinal"/>
+			<ParameterMapping sourceType="Parent" from="PosPick" to="PosPick"/>
+			<ParameterMapping sourceType="Parent" from="PosPlace" to="PosPlace"/>
+		</ParameterMappings>
 	</StartState>
 	<Transitions>
 		<Transition from="PickAndPlace" to="Failure" eventName="Failure">

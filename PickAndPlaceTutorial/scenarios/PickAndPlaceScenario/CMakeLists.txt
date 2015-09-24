@@ -20,4 +20,4 @@ set(SCENARIO_CONFIGS
 #    config/ComponentName.optionalString.cfg
 #    )
 # optional 3rd parameter: "path/to/global/config.cfg"
-armarx_scenario_from_configs("PickAndPlaceScenario" "${SCENARIO_CONFIGS}")
+armarx_scenario_from_configs("PickAndPlaceScenario" "${SCENARIO_CONFIGS}" "global.cfg")

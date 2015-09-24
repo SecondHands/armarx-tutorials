@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <State version="1.2" name="SecondHandsPickAndPlace" uuid="6F3D6E97-9D64-408E-8741-AA1B090EC1A8" width="800" height="600" type="Normal State">
-	<InputParameters/>
+	<InputParameters>
+		<Parameter name="GraspName" type="::armarx::StringVariantData" docType="string" optional="no"/>
+		<Parameter name="GraspPreposeName" type="::armarx::StringVariantData" docType="string" optional="no"/>
+		<Parameter name="ObjectName" type="::armarx::StringVariantData" docType="string" optional="no"/>
+		<Parameter name="PosFinal" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no"/>
+		<Parameter name="PosPick" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no"/>
+		<Parameter name="PosPlace" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no"/>
+	</InputParameters>
 	<OutputParameters/>
 	<LocalParameters/>
 	<Substates>

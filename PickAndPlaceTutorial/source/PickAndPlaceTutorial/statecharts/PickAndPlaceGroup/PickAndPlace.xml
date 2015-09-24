@@ -65,6 +65,9 @@
 		<Parameter name="PositionalAccuracyLiftHand" type="::armarx::FloatVariantData" docType="float" optional="no">
 			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":60.0}}' docValue="60"/>
 		</Parameter>
+		<Parameter name="PositionalAccuracyPlace" type="::armarx::FloatVariantData" docType="float" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":25.0}}' docValue="25"/>
+		</Parameter>
 		<Parameter name="PositionalAccuracyPlatform" type="::armarx::FloatVariantData" docType="float" optional="no">
 			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":10.0}}' docValue="10"/>
 		</Parameter>
@@ -172,6 +175,7 @@
 				<ParameterMapping sourceType="Parent" from="KinematicChainName" to="KinematicChainName"/>
 				<ParameterMapping sourceType="Parent" from="ObjectName" to="ObjectName"/>
 				<ParameterMapping sourceType="Parent" from="TcpTargetPose" to="PlacePosition"/>
+				<ParameterMapping sourceType="Parent" from="PositionalAccuracyPlace" to="PositionAccuracyPlace"/>
 				<ParameterMapping sourceType="Parent" from="TorqueThreshold" to="TorqueThreshold"/>
 			</ParameterMappings>
 			<ParameterMappingsToParentsLocal/>
@@ -222,7 +226,7 @@
 			<ParameterMappings>
 				<ParameterMapping sourceType="Parent" from="OrientationalAccuracyRadPlatform" to="orientationalAccuracy"/>
 				<ParameterMapping sourceType="Parent" from="PositionalAccuracyPlatform" to="positionalAccuracy"/>
-				<ParameterMapping sourceType="Parent" from="PosPick" to="targetPositions"/>
+				<ParameterMapping sourceType="Parent" from="PosPlace" to="targetPositions"/>
 				<ParameterMapping sourceType="Parent" from="TimeToMove" to="timeoutMoveTo"/>
 				<ParameterMapping sourceType="Parent" from="TimeToWait" to="waitAfterLast"/>
 			</ParameterMappings>

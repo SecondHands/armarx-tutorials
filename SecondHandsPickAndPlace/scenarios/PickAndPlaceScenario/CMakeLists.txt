@@ -11,6 +11,7 @@ set(SCENARIO_CONFIGS
         config/XMLRemoteStateOfferer.Hand.cfg
         config/XMLRemoteStateOfferer.MotionControl.cfg
         config/XMLRemoteStateOfferer.PickAndPlace.cfg
+        config/XMLRemoteStateOfferer.SecondHandsPickAndPlace.cfg
         config/XMLRemoteStateOfferer.PlaceObject.cfg
         config/XMLRemoteStateOfferer.PlatformGroup.cfg
         config/XMLRemoteStateOfferer.VisualServo.cfg

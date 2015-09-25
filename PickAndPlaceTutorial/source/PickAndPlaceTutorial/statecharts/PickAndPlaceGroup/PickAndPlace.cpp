@@ -44,29 +44,43 @@ PickAndPlace::PickAndPlace(const XMLStateConstructorParams& stateData) :
 
 void PickAndPlace::onEnter()
 {
-    // put your user code for the enter-point here
-    // execution time should be short (<100ms)
+    const bool resetSimulatedObjectPose = in.getResetSimObjectPose();
+
+    if (!resetSimulatedObjectPose)
+    {
+        ARMARX_IMPORTANT_S << "Not resetting simulated object pose, as requested.";
+        return;
+    }
+
     armarx::SimulatorInterfacePrx simulatorPrx = getSimulatorInterface();
     memoryx::PriorKnowledgeInterfacePrx priorKnowledgeProxy = getPriorKnowledge();
     std::string objClassName = in.getObjectName();
+
+    ARMARX_IMPORTANT_S << "Resetting simulated object pose for: " << objClassName;
+
     //we'll assume that the instance - if there is any - is named the same as the class
     std::string objInstanceName = objClassName;
     memoryx::PersistentObjectClassSegmentBasePrx classesSegmentPrx = priorKnowledgeProxy->getObjectClassesSegment();
     memoryx::EntityBasePtr classEntity = classesSegmentPrx->getEntityByName(objClassName);
+
     if (!classEntity)
     {
         ARMARX_ERROR_S << "No memory entity found with name " << objClassName;
     }
+
     memoryx::ObjectClassPtr objectClass = memoryx::ObjectClassPtr::dynamicCast(classEntity);
+
     if (!objectClass)
     {
         ARMARX_ERROR_S << "Could not cast entitiy to object class, name: " << objClassName;
     }
+
     Eigen::Vector3f pos = {4200, 7000, 1030};
     Eigen::Matrix4f globalPose;
-    VirtualRobot::MathTools::rpy2eigen4f(-0.5*M_PI, 0, -0.5*M_PI, globalPose);
-    globalPose.block<3,1>(0,3) = pos;
+    VirtualRobot::MathTools::rpy2eigen4f(-0.5 * M_PI, 0, -0.5 * M_PI, globalPose);
+    globalPose.block<3, 1>(0, 3) = pos;
     armarx::PosePtr pose = new armarx::Pose(globalPose);
+
     if (!simulatorPrx->hasObject(objInstanceName))
     {
         ARMARX_IMPORTANT_S << "Adding object " << objClassName << " at pose:" << *pose;
@@ -85,11 +99,11 @@ void PickAndPlace::run()
     // runs in seperate thread, thus can do complex operations
     // should check constantly whether isRunningTaskStopped() returns true
 
-// uncomment this if you need a continous run function. Make sure to use sleep or use blocking wait to reduce cpu load.
-//    while (!isRunningTaskStopped()) // stop run function if returning true
-//    {
-//        // do your calculations
-//    }
+    // uncomment this if you need a continous run function. Make sure to use sleep or use blocking wait to reduce cpu load.
+    //    while (!isRunningTaskStopped()) // stop run function if returning true
+    //    {
+    //        // do your calculations
+    //    }
 
 }
 
@@ -112,4 +126,3 @@ XMLStateFactoryBasePtr PickAndPlace::CreateInstance(XMLStateConstructorParams st
 {
     return XMLStateFactoryBasePtr(new PickAndPlace(stateData));
 }
-

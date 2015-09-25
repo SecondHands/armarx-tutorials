@@ -71,6 +71,9 @@
 		<Parameter name="PositionalAccuracyPlatform" type="::armarx::FloatVariantData" docType="float" optional="yes">
 			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FloatVariantData","value":10.0}}' docValue="10"/>
 		</Parameter>
+		<Parameter name="ResetSimObjectPose" type="::armarx::BoolVariantData" docType="bool" optional="no">
+			<DefaultValue profile="Armar3Simulation" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::BoolVariantData","value":true}}' docValue="True"/>
+		</Parameter>
 		<Parameter name="TcpTargetPose" type="::armarx::FramedPositionBase" docType="FramedPosition" optional="yes">
 			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedPositionBase","value":{"agent":"Armar3","frame":"Armar3_Base","x":150.0,"y":670.0,"z":930.0}}}' docValue="150\n670\n930\nframe: Armar3_Base agent: Armar3"/>
 		</Parameter>

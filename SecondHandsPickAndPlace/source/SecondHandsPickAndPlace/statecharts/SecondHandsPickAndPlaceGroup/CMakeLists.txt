@@ -25,9 +25,8 @@ if (Eigen3_FOUND AND Simox_FOUND)
 endif()
 
 set(COMPONENT_LIBS
-   RobotAPIInterfaces RobotAPICore
-    ArmarXCoreInterfaces ArmarXCore ArmarXCoreStatechart ArmarXCoreObservers)
-
+  RobotAPIInterfaces RobotAPICore
+  ArmarXCoreInterfaces ArmarXCore ArmarXCoreStatechart ArmarXCoreObservers)
 # Sources
 
 set(SOURCES
@@ -41,7 +40,6 @@ SecondHandsPickAndPlaceGroupRemoteStateOfferer.h
 SecondHandsPickAndPlaceGroup.scgxml
 ./SecondHandsPickAndPlace.h
 #@TEMPLATE_LINE@@COMPONENT_PATH@/@COMPONENT_NAME@.h
-./SecondHandsPickAndPlace.xml
 ./SecondHandsPickAndPlace.xml
 #@TEMPLATE_LINE@@COMPONENT_PATH@/@COMPONENT_NAME@.xml
 )

@@ -39,6 +39,7 @@ void SecondHandsPickAndPlace::onEnter()
 {
     // put your user code for the enter-point here
     // execution time should be short (<100ms)
+
 }
 
 void SecondHandsPickAndPlace::run()
@@ -74,4 +75,3 @@ XMLStateFactoryBasePtr SecondHandsPickAndPlace::CreateInstance(XMLStateConstruct
 {
     return XMLStateFactoryBasePtr(new SecondHandsPickAndPlace(stateData));
 }
-

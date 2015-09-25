@@ -19,6 +19,9 @@
 		<Parameter name="PosPlace" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
 			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":5232.0,"y":962.0,"z":3.069999933242798}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="5232\n962\n3.07"/>
 		</Parameter>
+		<Parameter name="ResetSimObjectPose" type="::armarx::BoolVariantData" docType="bool" optional="no">
+			<DefaultValue profile="Armar3Simulation" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::BoolVariantData","value":false}}' docValue="False"/>
+		</Parameter>
 	</InputParameters>
 	<OutputParameters/>
 	<LocalParameters/>
@@ -36,6 +39,7 @@
 			<ParameterMapping sourceType="Parent" from="PosFinal" to="PosFinal"/>
 			<ParameterMapping sourceType="Parent" from="PosPick" to="PosPick"/>
 			<ParameterMapping sourceType="Parent" from="PosPlace" to="PosPlace"/>
+			<ParameterMapping sourceType="Parent" from="ResetSimObjectPose" to="ResetSimObjectPose"/>
 		</ParameterMappings>
 	</StartState>
 	<Transitions>

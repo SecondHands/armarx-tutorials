@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <State version="1.2" name="SecondHandsPickAndPlace" uuid="6F3D6E97-9D64-408E-8741-AA1B090EC1A8" width="800" height="600" type="Normal State">
 	<InputParameters>
-		<Parameter name="GraspName" type="::armarx::StringVariantData" docType="string" optional="no"/>
-		<Parameter name="GraspPreposeName" type="::armarx::StringVariantData" docType="string" optional="no"/>
-		<Parameter name="ObjectName" type="::armarx::StringVariantData" docType="string" optional="no"/>
-		<Parameter name="PosFinal" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no"/>
-		<Parameter name="PosPick" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no"/>
-		<Parameter name="PosPlace" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no"/>
+		<Parameter name="GraspName" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Grasp0"}}' docValue="Grasp0"/>
+		</Parameter>
+		<Parameter name="GraspPreposeName" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Grasp0Pre"}}' docValue="Grasp0Pre"/>
+		</Parameter>
+		<Parameter name="ObjectName" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"RiceBox"}}' docValue="RiceBox"/>
+		</Parameter>
+		<Parameter name="PosFinal" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":5177.0,"y":3330.0,"z":-1.299999952316284}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="5177\n3330\n-1.3"/>
+		</Parameter>
+		<Parameter name="PosPick" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":4018.0,"y":5230.0,"z":1.690000057220459}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="4018\n5230\n1.69"/>
+		</Parameter>
+		<Parameter name="PosPlace" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":5232.0,"y":962.0,"z":3.069999933242798}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="5232\n962\n3.07"/>
+		</Parameter>
 	</InputParameters>
 	<OutputParameters/>
 	<LocalParameters/>

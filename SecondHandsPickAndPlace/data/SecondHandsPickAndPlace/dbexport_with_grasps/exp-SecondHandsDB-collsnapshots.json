@@ -1,0 +1,32 @@
+{
+    "_id": {
+        "$oid": "55ffebc88b9cda4522feb967"
+    }, 
+    "name": "Snapshot_OcadoEnvironment", 
+    "segments": {
+        "activeOac": "Snapshot_OcadoEnvironment_activeOac", 
+        "affordances": "Snapshot_OcadoEnvironment_affordances", 
+        "agentInstances": "Snapshot_OcadoEnvironment_agentInstances", 
+        "environmentalPrimitives": "Snapshot_OcadoEnvironment_environmentalPrimitives", 
+        "objectClasses": "Snapshot_OcadoEnvironment_objectClasses", 
+        "objectInstances": "Snapshot_OcadoEnvironment_objectInstances", 
+        "objectRelations": "Snapshot_OcadoEnvironment_objectRelations", 
+        "worldState": "Snapshot_OcadoEnvironment_worldState"
+    }
+}
+{
+    "_id": {
+        "$oid": "5603b755505d3f1f746072ee"
+    }, 
+    "name": "Snapshot_OcadoEnvironmentFelix", 
+    "segments": {
+        "activeOac": "Snapshot_OcadoEnvironmentFelix_activeOac", 
+        "affordances": "Snapshot_OcadoEnvironmentFelix_affordances", 
+        "agentInstances": "Snapshot_OcadoEnvironmentFelix_agentInstances", 
+        "environmentalPrimitives": "Snapshot_OcadoEnvironmentFelix_environmentalPrimitives", 
+        "objectClasses": "Snapshot_OcadoEnvironmentFelix_objectClasses", 
+        "objectInstances": "Snapshot_OcadoEnvironmentFelix_objectInstances", 
+        "objectRelations": "Snapshot_OcadoEnvironmentFelix_objectRelations", 
+        "worldState": "Snapshot_OcadoEnvironmentFelix_worldState"
+    }
+}

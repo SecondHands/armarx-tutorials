@@ -1,0 +1,91 @@
+{
+    "key": {
+        "_id": 1
+    }, 
+    "name": "_id_", 
+    "ns": "SecondHandsDB.Snapshot_OcadoEnvironment_objectInstances", 
+    "v": 1
+}
+{
+    "key": {
+        "_id": 1
+    }, 
+    "name": "_id_", 
+    "ns": "SecondHandsDB.Prior_OcadoEnvironment", 
+    "v": 1
+}
+{
+    "key": {
+        "_id": 1
+    }, 
+    "name": "_id_", 
+    "ns": "SecondHandsDB.fs.files", 
+    "v": 1
+}
+{
+    "key": {
+        "_id": 1
+    }, 
+    "name": "_id_", 
+    "ns": "SecondHandsDB.Snapshot_OcadoEnvironmentFelix_agentInstances", 
+    "v": 1
+}
+{
+    "key": {
+        "_id": 1
+    }, 
+    "name": "_id_", 
+    "ns": "SecondHandsDB.snapshots", 
+    "v": 1
+}
+{
+    "key": {
+        "_id": 1
+    }, 
+    "name": "_id_", 
+    "ns": "SecondHandsDB.Snapshot_OcadoEnvironmentFelix_objectInstances", 
+    "v": 1
+}
+{
+    "key": {
+        "_id": 1
+    }, 
+    "name": "_id_", 
+    "ns": "SecondHandsDB.fs.chunks", 
+    "v": 1
+}
+{
+    "key": {
+        "_id": 1
+    }, 
+    "name": "_id_", 
+    "ns": "SecondHandsDB.Snapshot_OcadoEnvironment_agentInstances", 
+    "v": 1
+}
+{
+    "key": {
+        "name": 1
+    }, 
+    "name": "name_1", 
+    "ns": "SecondHandsDB.snapshots", 
+    "unique": true, 
+    "v": 1
+}
+{
+    "key": {
+        "filename": 1
+    }, 
+    "name": "filename_1", 
+    "ns": "SecondHandsDB.fs.files", 
+    "v": 1
+}
+{
+    "key": {
+        "files_id": 1, 
+        "n": 1
+    }, 
+    "name": "files_id_1_n_1", 
+    "ns": "SecondHandsDB.fs.chunks", 
+    "unique": true, 
+    "v": 1
+}

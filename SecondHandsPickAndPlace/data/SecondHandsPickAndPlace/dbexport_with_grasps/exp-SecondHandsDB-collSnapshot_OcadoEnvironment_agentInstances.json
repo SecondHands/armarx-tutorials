@@ -1,0 +1,52 @@
+{
+    "_id": "2", 
+    "attrs": {
+        "agentFilePath": [
+            {
+                "value": {
+                    "typeName": "::armarx::StringVariantData", 
+                    "value": "RobotAPI/robots/Armar3/ArmarIII.xml"
+                }
+            }
+        ], 
+        "orientation": [
+            {
+                "value": {
+                    "typeName": "::armarx::FramedOrientationBase", 
+                    "value": {
+                        "agent": "", 
+                        "frame": "Global", 
+                        "qw": 0.7078718543052673, 
+                        "qx": 0.000551142729818821, 
+                        "qy": 5.368120582716074e-06, 
+                        "qz": -0.7063406705856323
+                    }
+                }
+            }
+        ], 
+        "position": [
+            {
+                "value": {
+                    "typeName": "::armarx::FramedPositionBase", 
+                    "value": {
+                        "agent": "", 
+                        "frame": "Global", 
+                        "x": 3599.72900390625, 
+                        "y": 7099.7216796875, 
+                        "z": -0.006221811752766371
+                    }
+                }
+            }
+        ], 
+        "stringifiedSharedRobotInterfaceProxy": [
+            {
+                "value": {
+                    "typeName": "::armarx::StringVariantData", 
+                    "value": "47A75C33-CFE3-48EF-A1AA-2FB7968CA2AD -t -e 1.0:tcp -h 141.3.88.39 -p 48390"
+                }
+            }
+        ]
+    }, 
+    "name": "Armar3", 
+    "type": "::memoryx::AgentInstanceBase"
+}

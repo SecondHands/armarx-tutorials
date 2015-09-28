@@ -1,0 +1,1187 @@
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f067ee"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067ec"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067ec"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe76fbeebb16aaba5da8e"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_6", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f067f1"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067ef"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067ef"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe763beebb16aaba5da8b"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_3", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f067f4"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067f2"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067f2"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe726beebb16aaba5da7b"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_0", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f067f7"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067f5"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067f5"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe72abeebb16aaba5da7c"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_1", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f067fa"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067f8"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067f8"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe76bbeebb16aaba5da8d"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_5", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f067fd"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067fb"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067fb"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe767beebb16aaba5da8c"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_4", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f06800"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067fe"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f067fe"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe756beebb16aaba5da87"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_2", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f06803"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06801"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06801"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe773beebb16aaba5da8f"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_7", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f06806"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06804"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06804"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe77cbeebb16aaba5da93"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_9", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f06809"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06807"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06807"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe778beebb16aaba5da92"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_8", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f0680c"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f0680a"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f0680a"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe73bbeebb16aaba5da80"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_13", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f0680f"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f0680d"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f0680d"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe72fbeebb16aaba5da7d"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_10", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f06812"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06810"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06810"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe733beebb16aaba5da7e"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_11", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f06815"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06813"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06813"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe74bbeebb16aaba5da84"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_17", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f06818"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06816"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06816"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe73fbeebb16aaba5da81"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_14", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f0681b"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06819"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06819"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe737beebb16aaba5da7f"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_12", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f0681e"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f0681c"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f0681c"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe747beebb16aaba5da83"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_16", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ab4f67ffa8b8f06821"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f0681f"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f0681f"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe743beebb16aaba5da82"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_15", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ac4f67ffa8b8f06824"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06822"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ab4f67ffa8b8f06822"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe74fbeebb16aaba5da85"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_18", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ac4f67ffa8b8f06827"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ac4f67ffa8b8f06825"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ac4f67ffa8b8f06825"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe753beebb16aaba5da86"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_19", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ac4f67ffa8b8f0682a"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ac4f67ffa8b8f06828"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ac4f67ffa8b8f06828"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe75abeebb16aaba5da88"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_20", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "55ffe6ac4f67ffa8b8f0682d"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ac4f67ffa8b8f0682b"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe6ac4f67ffa8b8f0682b"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "55ffe75ebeebb16aaba5da89"
+                    }
+                }
+            }
+        ], 
+        "isInstanceable": [], 
+        "parentClasses": []
+    }, 
+    "name": "obj_21", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "5603b55971d5b038e8eb47e3"
+    }, 
+    "attrs": {
+        "IvFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "5603b55971d5b038e8eb47e0"
+                    }
+                }
+            }
+        ], 
+        "IvFileCollision": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "5603b55971d5b038e8eb47e0"
+                    }
+                }
+            }
+        ], 
+        "ManipulationFile": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "5603bc7e44e42c2b57d95b7c"
+                    }
+                }
+            }
+        ], 
+        "PutdownOrientationRPY": [
+            {
+                "value": {
+                    "typeName": "::armarx::Vector3Base", 
+                    "value": {
+                        "x": 0, 
+                        "y": 0, 
+                        "z": 0
+                    }
+                }
+            }
+        ], 
+        "defaultMotionModel": [
+            {
+                "value": {
+                    "typeName": "::armarx::StringVariantData", 
+                    "value": "Static"
+                }
+            }
+        ], 
+        "isInstanceable": [
+            {
+                "value": {
+                    "typeName": "::armarx::BoolVariantData", 
+                    "value": true
+                }
+            }
+        ], 
+        "parentClasses": [
+            {
+                "value": {
+                    "typeName": "::armarx::StringVariantData", 
+                    "value": ""
+                }
+            }
+        ], 
+        "recognitionMethod": [
+            {
+                "value": {
+                    "typeName": "::armarx::StringVariantData", 
+                    "value": "TexturedObjectRecognition"
+                }
+            }
+        ], 
+        "texFiles": [
+            {
+                "value": {
+                    "typeName": "::memoryx::MongoDBRefBase", 
+                    "value": {
+                        "dbName": "SecondHandsDB", 
+                        "docId": "5603b55971d5b038e8eb47e1"
+                    }
+                }
+            }
+        ]
+    }, 
+    "name": "RiceBox", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "5604fee95ffffa372fc5a482"
+    }, 
+    "attrs": {
+        "PutdownOrientationRPY": [
+            {
+                "value": {
+                    "typeName": "::armarx::Vector3Base", 
+                    "value": {
+                        "x": 0, 
+                        "y": 0, 
+                        "z": 0
+                    }
+                }
+            }
+        ], 
+        "defaultMotionModel": [
+            {
+                "value": {
+                    "typeName": "::armarx::StringVariantData", 
+                    "value": "RobotHand"
+                }
+            }
+        ], 
+        "isInstanceable": [
+            {
+                "value": {
+                    "typeName": "::armarx::BoolVariantData", 
+                    "value": true
+                }
+            }
+        ], 
+        "objectColor": [
+            {
+                "value": {
+                    "typeName": "::armarx::IntVariantData", 
+                    "value": 0
+                }
+            }
+        ], 
+        "parentClasses": [
+            {
+                "value": {
+                    "typeName": "::armarx::StringVariantData", 
+                    "value": ""
+                }
+            }
+        ], 
+        "recognitionMethod": [
+            {
+                "value": {
+                    "typeName": "::armarx::StringVariantData", 
+                    "value": "HandMarkerLocalization"
+                }
+            }
+        ]
+    }, 
+    "name": "handleft3a", 
+    "type": "::memoryx::ObjectClassBase"
+}
+{
+    "_id": {
+        "$oid": "5604fef55ffffa372fc5a483"
+    }, 
+    "attrs": {
+        "PutdownOrientationRPY": [
+            {
+                "value": {
+                    "typeName": "::armarx::Vector3Base", 
+                    "value": {
+                        "x": 0, 
+                        "y": 0, 
+                        "z": 0
+                    }
+                }
+            }
+        ], 
+        "defaultMotionModel": [
+            {
+                "value": {
+                    "typeName": "::armarx::StringVariantData", 
+                    "value": "RobotHand"
+                }
+            }
+        ], 
+        "isInstanceable": [
+            {
+                "value": {
+                    "typeName": "::armarx::BoolVariantData", 
+                    "value": true
+                }
+            }
+        ], 
+        "objectColor": [
+            {
+                "value": {
+                    "typeName": "::armarx::IntVariantData", 
+                    "value": 0
+                }
+            }
+        ], 
+        "parentClasses": [
+            {
+                "value": {
+                    "typeName": "::armarx::StringVariantData", 
+                    "value": ""
+                }
+            }
+        ], 
+        "recognitionMethod": [
+            {
+                "value": {
+                    "typeName": "::armarx::StringVariantData", 
+                    "value": "HandMarkerLocalization"
+                }
+            }
+        ]
+    }, 
+    "name": "handright3a", 
+    "type": "::memoryx::ObjectClassBase"
+}

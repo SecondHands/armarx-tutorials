@@ -9,6 +9,14 @@ if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
 endif()
 
+find_package(Eigen3 QUIET)
+armarx_build_if(Eigen3_FOUND "Eigen3 not available")
+if (Eigen3_FOUND)
+    message("*** Found eigen *** ${Eigen3_INCLUDE_DIR}")
+    include_directories(${Eigen3_INCLUDE_DIR})
+endif()
+
+
 set(COMPONENT_LIBS ArmarXCoreInterfaces ArmarXCore ComponentsExampleInterfaces)
 
 

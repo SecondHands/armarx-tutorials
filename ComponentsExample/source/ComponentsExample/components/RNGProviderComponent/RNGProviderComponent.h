@@ -27,6 +27,8 @@
 #include <ComponentsExample/interface/RNGComponentProviderInterface.h>
 #include <boost/random/mersenne_twister.hpp>
 
+#include <Eigen/Eigen>
+
 namespace armarx
 {
     /**
@@ -49,11 +51,11 @@ namespace armarx
      * @defgroup Component-RNGProviderComponent RNGProviderComponent
      * @ingroup ComponentsExample-Components
      * A description of the component RNGProviderComponent.
-     * 
+     *
      * @class RNGProviderComponent
      * @ingroup Component-RNGProviderComponent
      * @brief Brief description of class RNGProviderComponent.
-     * 
+     *
      * Detailed description of class RNGProviderComponent.
      */
     class RNGProviderComponent :

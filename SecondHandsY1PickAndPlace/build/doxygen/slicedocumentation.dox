@@ -1,0 +1,14 @@
+/**
+ \page slicedocumentation SecondHandsY1PickAndPlace: Slice Documentation
+
+ \htmlonly
+  <a href="slice/index.html">Direct Link to Slice Documentation (use this for storing bookmarks)</a>
+ \endhtmlonly
+
+ \section slicedocumentation-inline Inline Slice Documentation
+ \htmlonly
+  <div style="width:100%; height:100%;">
+    <iframe src="slice/index.html" style="width:100%; height:700px;" name="Slice Documentation"></iframe>
+  </div>
+ \endhtmlonly
+*/

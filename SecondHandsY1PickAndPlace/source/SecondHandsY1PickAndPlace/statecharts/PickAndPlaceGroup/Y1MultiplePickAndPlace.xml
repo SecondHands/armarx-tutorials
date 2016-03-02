@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<State version="1.2" name="Y1MultiplePickAndPlace" uuid="7AB31EFD-4905-4636-BF68-BAE028851AA4" width="800" height="600" type="Normal State">
+	<InputParameters>
+		<Parameter name="GraspName1" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Grasp"}}' docValue="Grasp"/>
+		</Parameter>
+		<Parameter name="GraspName2" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Grasp"}}' docValue="Grasp"/>
+		</Parameter>
+		<Parameter name="GraspName3" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Grasp"}}' docValue="Grasp"/>
+		</Parameter>
+		<Parameter name="GraspPreposeName1" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Prepose"}}' docValue="Prepose"/>
+		</Parameter>
+		<Parameter name="GraspPreposeName2" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Prepose"}}' docValue="Prepose"/>
+		</Parameter>
+		<Parameter name="GraspPreposeName3" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Prepose"}}' docValue="Prepose"/>
+		</Parameter>
+		<Parameter name="GraspSetName1" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"TCP R"}}' docValue="TCP R"/>
+		</Parameter>
+		<Parameter name="GraspSetName2" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"TCP R"}}' docValue="TCP R"/>
+		</Parameter>
+		<Parameter name="GraspSetName3" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"TCP R"}}' docValue="TCP R"/>
+		</Parameter>
+		<Parameter name="ObjectName1" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Wrench"}}' docValue="Wrench"/>
+		</Parameter>
+		<Parameter name="ObjectName2" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"SprayBottle"}}' docValue="SprayBottle"/>
+		</Parameter>
+		<Parameter name="ObjectName3" type="::armarx::StringVariantData" docType="string" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Flashlight"}}' docValue="Flashlight"/>
+		</Parameter>
+		<Parameter name="PosFinal1" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":300.0,"y":-1800.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="300\n-1800\n0"/>
+		</Parameter>
+		<Parameter name="PosFinal2" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":200.0,"y":-2000.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="200\n-2000\n0"/>
+		</Parameter>
+		<Parameter name="PosFinal3" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":-1000.0,"y":-2700.0,"z":0.1000000014901161}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="-1000\n-2700\n0.1"/>
+		</Parameter>
+		<Parameter name="PosPick1" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":100.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="100\n-1400\n0"/>
+		</Parameter>
+		<Parameter name="PosPick2" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":300.0,"y":-1500.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="300\n-1500\n0"/>
+		</Parameter>
+		<Parameter name="PosPick3" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":700.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="700\n-1400\n0"/>
+		</Parameter>
+		<Parameter name="PosPlace1" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":-2000.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="-2000\n-1400\n0"/>
+		</Parameter>
+		<Parameter name="PosPlace2" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":-1800.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="-1800\n-1400\n0"/>
+		</Parameter>
+		<Parameter name="PosPlace3" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":-1500.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="-1500\n-1400\n0"/>
+		</Parameter>
+		<Parameter name="TcpTargetOrientation1" type="::armarx::FramedOrientationBase" docType="FramedOrientation" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedOrientationBase","value":{"agent":"Armar3","frame":"Armar3_Base","qw":1.0,"qx":0.0,"qy":0.0,"qz":0.0}}}' docValue="1 0 0\n0 1 0\n0 0 1\nframe: Armar3_Base agent: Armar3"/>
+		</Parameter>
+		<Parameter name="TcpTargetOrientation2" type="::armarx::FramedOrientationBase" docType="FramedOrientation" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedOrientationBase","value":{"agent":"Armar3","frame":"Armar3_Base","qw":1.0,"qx":0.0,"qy":0.0,"qz":0.0}}}' docValue="1 0 0\n0 1 0\n0 0 1\nframe: Armar3_Base agent: Armar3"/>
+		</Parameter>
+		<Parameter name="TcpTargetOrientation3" type="::armarx::FramedOrientationBase" docType="FramedOrientation" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedOrientationBase","value":{"agent":"Armar3","frame":"Armar3_Base","qw":1.0,"qx":0.0,"qy":0.0,"qz":0.0}}}' docValue="1 0 0\n0 1 0\n0 0 1\nframe: Armar3_Base agent: Armar3"/>
+		</Parameter>
+		<Parameter name="TcpTargetPosition1" type="::armarx::FramedPositionBase" docType="FramedPosition" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedPositionBase","value":{"agent":"Armar3","frame":"Armar3_Base","x":380.0,"y":660.0,"z":900.0}}}' docValue="380\n660\n900\nframe: Armar3_Base agent: Armar3"/>
+		</Parameter>
+		<Parameter name="TcpTargetPosition2" type="::armarx::FramedPositionBase" docType="FramedPosition" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedPositionBase","value":{"agent":"Armar3","frame":"Armar3_Base","x":420.0,"y":660.0,"z":1000.0}}}' docValue="420\n660\n1000\nframe: Armar3_Base agent: Armar3"/>
+		</Parameter>
+		<Parameter name="TcpTargetPosition3" type="::armarx::FramedPositionBase" docType="FramedPosition" optional="no">
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedPositionBase","value":{"agent":"Armar3","frame":"Armar3_Base","x":420.0,"y":660.0,"z":1000.0}}}' docValue="420\n660\n1000\nframe: Armar3_Base agent: Armar3"/>
+		</Parameter>
+	</InputParameters>
+	<OutputParameters/>
+	<LocalParameters/>
+	<Substates>
+		<EndState name="Failure" event="Failure" left="294.047" top="170.185" boundingSquareSize="100"/>
+		<LocalState name="PickAndPlace" refuuid="24BA551B-78F5-4E46-A962-48FB5DCC3556" left="67.7528" top="379.86" boundingSquareSize="100"/>
+		<LocalState name="PickAndPlace_2" refuuid="24BA551B-78F5-4E46-A962-48FB5DCC3556" left="363.199" top="396.52" boundingSquareSize="100"/>
+		<LocalState name="PickAndPlace_3" refuuid="24BA551B-78F5-4E46-A962-48FB5DCC3556" left="609.775" top="398.742" boundingSquareSize="100"/>
+		<EndState name="Success" event="Success" left="598.766" top="179.21" boundingSquareSize="100"/>
+	</Substates>
+	<Events>
+		<Event name="Failure">
+			<Description>Event for statechart-internal failures or optionally user-code failures</Description>
+		</Event>
+	</Events>
+	<StartState substateName="PickAndPlace">
+		<ParameterMappings>
+			<ParameterMapping sourceType="Parent" from="GraspName1" to="GraspName"/>
+			<ParameterMapping sourceType="Parent" from="GraspPreposeName1" to="GraspPreposeName"/>
+			<ParameterMapping sourceType="Parent" from="GraspSetName1" to="GraspSetName"/>
+			<ParameterMapping sourceType="Parent" from="ObjectName1" to="ObjectName"/>
+			<ParameterMapping sourceType="Parent" from="PosFinal1" to="PosFinal"/>
+			<ParameterMapping sourceType="Parent" from="PosPick1" to="PosPick"/>
+			<ParameterMapping sourceType="Parent" from="PosPlace1" to="PosPlace"/>
+			<ParameterMapping sourceType="Parent" from="TcpTargetOrientation1" to="TcpTargetOrientation"/>
+			<ParameterMapping sourceType="Parent" from="TcpTargetPosition1" to="TcpTargetPosition"/>
+		</ParameterMappings>
+		<SupportPoints/>
+	</StartState>
+	<Transitions>
+		<Transition from="PickAndPlace" to="Failure" eventName="Failure">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="233.002" posY="315.055"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="PickAndPlace" to="PickAndPlace_2" eventName="Success">
+			<ParameterMappings>
+				<ParameterMapping sourceType="Parent" from="GraspName2" to="GraspName"/>
+				<ParameterMapping sourceType="Parent" from="GraspPreposeName2" to="GraspPreposeName"/>
+				<ParameterMapping sourceType="Parent" from="GraspSetName2" to="GraspSetName"/>
+				<ParameterMapping sourceType="Parent" from="ObjectName2" to="ObjectName"/>
+				<ParameterMapping sourceType="Parent" from="PosFinal2" to="PosFinal"/>
+				<ParameterMapping sourceType="Parent" from="PosPick2" to="PosPick"/>
+				<ParameterMapping sourceType="Parent" from="PosPlace2" to="PosPlace"/>
+				<ParameterMapping sourceType="Parent" from="TcpTargetOrientation2" to="TcpTargetOrientation"/>
+				<ParameterMapping sourceType="Parent" from="TcpTargetPosition2" to="TcpTargetPosition"/>
+			</ParameterMappings>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="264.81" posY="438.047"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="PickAndPlace_2" to="Failure" eventName="Failure">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="365.011" posY="325.272"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="PickAndPlace_2" to="PickAndPlace_3" eventName="Success">
+			<ParameterMappings>
+				<ParameterMapping sourceType="Parent" from="GraspName3" to="GraspName"/>
+				<ParameterMapping sourceType="Parent" from="GraspPreposeName3" to="GraspPreposeName"/>
+				<ParameterMapping sourceType="Parent" from="GraspSetName3" to="GraspSetName"/>
+				<ParameterMapping sourceType="Parent" from="ObjectName3" to="ObjectName"/>
+				<ParameterMapping sourceType="Parent" from="PosFinal3" to="PosFinal"/>
+				<ParameterMapping sourceType="Parent" from="PosPick3" to="PosPick"/>
+				<ParameterMapping sourceType="Parent" from="PosPlace3" to="PosPlace"/>
+				<ParameterMapping sourceType="Parent" from="TcpTargetOrientation3" to="TcpTargetOrientation"/>
+				<ParameterMapping sourceType="Parent" from="TcpTargetPosition3" to="TcpTargetPosition"/>
+			</ParameterMappings>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="533.377" posY="469.325"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="PickAndPlace_3" to="Failure" eventName="Failure">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="517.412" posY="327.303"/>
+			</SupportPoints>
+		</Transition>
+		<Transition from="PickAndPlace_3" to="Success" eventName="Success">
+			<ParameterMappings/>
+			<ParameterMappingsToParentsLocal/>
+			<ParameterMappingsToParentsOutput/>
+			<SupportPoints>
+				<SupportPoint posX="677.265" posY="349.835"/>
+			</SupportPoints>
+		</Transition>
+	</Transitions>
+</State>
+

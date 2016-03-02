@@ -1,0 +1,11 @@
+/home/felipebelo/Documents/projects/secondhands/projects/secondhands-git/armarx-tutorials/SecondHandsY1PickAndPlace/build/CMakeFiles/ExternalDependency_RobotSkillTemplates.dir
+/home/felipebelo/Documents/projects/secondhands/projects/secondhands-git/armarx-tutorials/SecondHandsY1PickAndPlace/build/source/SecondHandsY1PickAndPlace/statecharts/PickAndPlaceGroup/CMakeFiles/PickAndPlaceGroup.dir
+/home/felipebelo/Documents/projects/secondhands/projects/secondhands-git/armarx-tutorials/SecondHandsY1PickAndPlace/build/CMakeFiles/code_format.dir
+/home/felipebelo/Documents/projects/secondhands/projects/secondhands-git/armarx-tutorials/SecondHandsY1PickAndPlace/build/CMakeFiles/coverage.dir
+/home/felipebelo/Documents/projects/secondhands/projects/secondhands-git/armarx-tutorials/SecondHandsY1PickAndPlace/build/CMakeFiles/coverage-reset.dir
+/home/felipebelo/Documents/projects/secondhands/projects/secondhands-git/armarx-tutorials/SecondHandsY1PickAndPlace/build/CMakeFiles/cppcheck.dir
+/home/felipebelo/Documents/projects/secondhands/projects/secondhands-git/armarx-tutorials/SecondHandsY1PickAndPlace/build/CMakeFiles/dependencies.dir
+/home/felipebelo/Documents/projects/secondhands/projects/secondhands-git/armarx-tutorials/SecondHandsY1PickAndPlace/build/CMakeFiles/doc.dir
+/home/felipebelo/Documents/projects/secondhands/projects/secondhands-git/armarx-tutorials/SecondHandsY1PickAndPlace/build/source/SecondHandsY1PickAndPlace/interface/CMakeFiles/javainterface.dir
+/home/felipebelo/Documents/projects/secondhands/projects/secondhands-git/armarx-tutorials/SecondHandsY1PickAndPlace/build/source/SecondHandsY1PickAndPlace/interface/CMakeFiles/slice2cpp_FINISHED.dir
+/home/felipebelo/Documents/projects/secondhands/projects/secondhands-git/armarx-tutorials/SecondHandsY1PickAndPlace/build/source/SecondHandsY1PickAndPlace/interface/CMakeFiles/slicedoc.dir

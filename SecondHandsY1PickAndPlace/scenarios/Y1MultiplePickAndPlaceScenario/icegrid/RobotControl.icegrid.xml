@@ -1,0 +1,8 @@
+<icegrid>
+    <server-instance template="ArmarXComponentTemplate"
+        component="RobotControl"
+        componentId=""
+        componentExeDir="${ArmarXCore_BIN_DIR}"
+        ArmarXConfig="${ARMARX_SCENARIO_DIR}/config/RobotControl.cfg"
+        ArmarXDependenciesConfig="${ARMARX_PACKAGE_CONFIG_DIR}/${ARMARX_SCENARIO_DEPENDENCY_CONFIG}"/>
+</icegrid>

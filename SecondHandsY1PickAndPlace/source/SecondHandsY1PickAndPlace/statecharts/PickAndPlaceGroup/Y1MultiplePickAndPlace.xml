@@ -53,7 +53,7 @@
 			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":300.0,"y":-1500.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="300\n-1500\n0"/>
 		</Parameter>
 		<Parameter name="PosPick3" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
-			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":700.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="700\n-1400\n0"/>
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":800.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="800\n-1400\n0"/>
 		</Parameter>
 		<Parameter name="PosPlace1" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
 			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":-2000.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="-2000\n-1400\n0"/>

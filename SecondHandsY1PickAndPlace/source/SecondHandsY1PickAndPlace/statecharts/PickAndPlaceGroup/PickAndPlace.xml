@@ -29,7 +29,7 @@
 			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"HipYawRightArm"}}' docValue="HipYawRightArm"/>
 		</Parameter>
 		<Parameter name="ObjectName" type="::armarx::StringVariantData" docType="string" optional="no">
-			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"SprayBottle"}}' docValue="SprayBottle"/>
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Flashlight"}}' docValue="Flashlight"/>
 		</Parameter>
 		<Parameter name="OpenHandShapeName" type="::armarx::StringVariantData" docType="string" optional="no">
 			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::StringVariantData","value":"Open Preshape"}}' docValue="Open Preshape"/>
@@ -50,7 +50,7 @@
 			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":-800.0,"y":-2700.0,"z":0.1000000014901161}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="-800\n-2700\n0.1"/>
 		</Parameter>
 		<Parameter name="PosPick" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
-			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":200.0,"y":-1500.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="200\n-1500\n0"/>
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":800.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="800\n-1400\n0"/>
 		</Parameter>
 		<Parameter name="PosPlace" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
 			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":-1800.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="-1800\n-1400\n0"/>

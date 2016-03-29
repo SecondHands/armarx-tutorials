@@ -62,7 +62,7 @@
 			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":-1800.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="-1800\n-1400\n0"/>
 		</Parameter>
 		<Parameter name="PosPlace3" type="::armarx::SingleTypeVariantListBase(::armarx::Vector3Base)" docType="List(Vector3)" optional="no">
-			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":-1500.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="-1500\n-1400\n0"/>
+			<DefaultValue profile="Armar3Base" value='{"array":[{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::Vector3Base","value":{"x":-1300.0,"y":-1400.0,"z":0.0}}}],"type":"::armarx::SingleTypeVariantListBase"}' docValue="-1300\n-1400\n0"/>
 		</Parameter>
 		<Parameter name="TcpTargetOrientation1" type="::armarx::FramedOrientationBase" docType="FramedOrientation" optional="no">
 			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedOrientationBase","value":{"agent":"Armar3","frame":"Armar3_Base","qw":1.0,"qx":0.0,"qy":0.0,"qz":0.0}}}' docValue="1 0 0\n0 1 0\n0 0 1\nframe: Armar3_Base agent: Armar3"/>
@@ -77,10 +77,10 @@
 			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedPositionBase","value":{"agent":"Armar3","frame":"Armar3_Base","x":380.0,"y":660.0,"z":900.0}}}' docValue="380\n660\n900\nframe: Armar3_Base agent: Armar3"/>
 		</Parameter>
 		<Parameter name="TcpTargetPosition2" type="::armarx::FramedPositionBase" docType="FramedPosition" optional="no">
-			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedPositionBase","value":{"agent":"Armar3","frame":"Armar3_Base","x":420.0,"y":660.0,"z":1000.0}}}' docValue="420\n660\n1000\nframe: Armar3_Base agent: Armar3"/>
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedPositionBase","value":{"agent":"Armar3","frame":"Armar3_Base","x":420.0,"y":600.0,"z":1000.0}}}' docValue="420\n600\n1000\nframe: Armar3_Base agent: Armar3"/>
 		</Parameter>
 		<Parameter name="TcpTargetPosition3" type="::armarx::FramedPositionBase" docType="FramedPosition" optional="no">
-			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedPositionBase","value":{"agent":"Armar3","frame":"Armar3_Base","x":420.0,"y":660.0,"z":1000.0}}}' docValue="420\n660\n1000\nframe: Armar3_Base agent: Armar3"/>
+			<DefaultValue profile="Armar3Base" value='{"type":"::armarx::SingleVariantBase","variant":{"typeName":"::armarx::FramedPositionBase","value":{"agent":"Armar3","frame":"Armar3_Base","x":420.0,"y":600.0,"z":1000.0}}}' docValue="420\n600\n1000\nframe: Armar3_Base agent: Armar3"/>
 		</Parameter>
 	</InputParameters>
 	<OutputParameters/>

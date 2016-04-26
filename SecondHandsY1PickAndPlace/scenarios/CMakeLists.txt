@@ -1,3 +1,0 @@
-
-add_subdirectory(PickAndPlaceScenario)
-add_subdirectory(Y1MultiplePickAndPlaceScenario)

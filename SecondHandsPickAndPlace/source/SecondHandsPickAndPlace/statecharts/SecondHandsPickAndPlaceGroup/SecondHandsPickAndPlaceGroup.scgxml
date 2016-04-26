@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<StatechartGroup name="SecondHandsPickAndPlaceGroup" package="SecondHandsPickAndPlace" generateContext="true">
-	<Proxies/>
-	<State filename="SecondHandsPickAndPlace.xml" visibility="public"/>
-</StatechartGroup>
-

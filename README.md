@@ -10,3 +10,7 @@ PickAndPlaceTutorial:
 --------------------
 
 You must fill the Prior Knowledge with the kitchen simulation before running the scenario, as described in the [MemoryX tutorial](http://h2t-projects.webarchiv.kit.edu/Projects/ArmarX/MemoryX-gettingstarted.html#MemoryX-gettingstarted-filling).
+
+### SecondHandsY1PickAndPlace
+
+The Y1 pick and place was moved into SecondHandsIntegration.
